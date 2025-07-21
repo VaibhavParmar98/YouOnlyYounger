@@ -21,10 +21,10 @@ import { NavLink } from "react-router-dom";
                 <NavLink to="/about" className="hover:underline text-sm xl:text-base 2xl:text-lg">About</NavLink>
                 <NavLink to="/conditions" className="hover:underline text-sm xl:text-base 2xl:text-lg">Conditions</NavLink>
                 <NavLink to="/med-spa" className="hover:underline text-sm xl:text-base 2xl:text-lg">Med Spa</NavLink>
-                <NavLink to="/health" className="hover:underline text-sm xl:text-base 2xl:text-lg">Health</NavLink>
+                <NavLink to="/profile" className="hover:underline text-sm xl:text-base 2xl:text-lg">Health</NavLink>
                 <NavLink to="/healing" className="hover:underline text-sm xl:text-base 2xl:text-lg">Healing</NavLink>
                 <NavLink to="/gallery" className="hover:underline text-sm xl:text-base 2xl:text-lg">Gallery</NavLink>
-                <NavLink to="/blog" className="hover:underline text-sm xl:text-base 2xl:text-lg">Blog</NavLink>
+                <NavLink to="/contact" className="hover:underline text-sm xl:text-base 2xl:text-lg">Blog</NavLink>
                 <NavLink to="/career" className="hover:underline text-sm xl:text-base 2xl:text-lg">Career</NavLink>
               </div>
               <div className="hidden lg:flex gap-2 xl:gap-4">
@@ -46,9 +46,9 @@ import { NavLink } from "react-router-dom";
                 <NavLink to="/conditions" className="hover:underline text-sm" onClick={toggleMenu}>Conditions</NavLink>
                 <NavLink to="/med-spa" className="hover:underline text-sm" onClick={toggleMenu}>Med Spa</NavLink>
                 <NavLink to="/health" className="hover:underline text-sm" onClick={toggleMenu}>Health</NavLink>
-                <NavLink to="/healing" className="hover:underline text-sm" onClick={toggleMenu}>Healing</NavLink>
+                <NavLink to="/profile" className="hover:underline text-sm" onClick={toggleMenu}>Healing</NavLink>
                 <NavLink to="/gallery" className="hover:underline text-sm" onClick={toggleMenu}>Gallery</NavLink>
-                <NavLink to="/blog" className="hover:underline text-sm" onClick={toggleMenu}>Blog</NavLink>
+                <NavLink to="/contact" className="hover:underline text-sm" onClick={toggleMenu}>Blog</NavLink>
                 <NavLink to="/career" className="hover:underline text-sm" onClick={toggleMenu}>Career</NavLink>
                 <button className="p-2 bg-black text-white rounded-full cursor-pointer text-xs w-full max-w-xs">Book Appointment</button>
                 <button className="p-2 hover:underline border rounded-full cursor-pointer text-xs w-full max-w-xs">Contact Us</button>
