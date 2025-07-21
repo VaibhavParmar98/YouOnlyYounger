@@ -1,0 +1,212 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Marcellus&display=swap');
+
+
+@theme {
+  --font-marcellous : "Marcellus",serif;
+   --font-inter: "Inter", sans-serif;
+}
+
+
+/* FOR HEADLINE CONTINUESLY */
+
+.ticker {
+  display: flex;
+  white-space: nowrap;
+  position: relative;
+}
+
+.ticker__content {
+  display: inline-block;
+  animation: scroll 30s linear infinite;
+}
+
+.ticker__content span {
+  display: inline-block;
+  margin-right: 2rem; /* adjust spacing */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* FOR CUSTOMER REVIEW CONTINUESLY */
+
+.review-ticker-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.review-ticker {
+  display: flex;
+  gap: 2rem;
+  animation: scroll-review 10s linear infinite;
+  white-space: nowrap;
+}
+
+
+
+@keyframes scroll-review {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* FOR CARD */
+
+:root {
+	--cards: 4;
+	--cardHeight: 87vh;
+	--cardTopPadding: 1.5em;
+	--cardMargin: 4vw;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#cards {
+	list-style: none;
+	padding-left: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(var(--cards), var(--cardHeight));
+	gap: var(--cardMargin);
+	padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+	margin-bottom: var(--cardMargin);
+}
+
+#card1 {
+	--index: 1;
+}
+#card2 {
+	--index: 2;
+}
+#card3 {
+	--index: 3;
+}
+#card4 {
+	--index: 4;
+}
+
+.card {
+	position: sticky;
+	top: 0;
+	padding-top: calc(var(--index) * var(--cardTopPadding));
+}
+
+#card1 .card-body {
+	background-color: #FFEED9;
+}
+#card2 .card-body {
+	/* background-color: #7EC4CF; */
+	background-color: #E8F7F1;
+}
+#card3 .card-body {
+	background-color: #FFE7EE;
+}
+#card4 .card-body {
+	background-color: #EAEEFE;
+}
+#card5 .card-body {
+	background-color: #F4F4F4;
+}
+
+.card-body {
+	box-sizing: border-box;
+	padding: 30px;
+	border-radius: 50px;
+	box-shadow: 0 0 30px 0 rgba(0,0,0,0.3);
+	height: var(--cardHeight);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.5s;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+
+/* /---------------------/ */
+
+/* Size and Background  */
+.toggle img {
+  width: 70px;
+  cursor: pointer;
+}
+.menu li img {
+  width: 30px;
+}
+/* Menu Items */
+.menu {
+  position: relative;
+  width: 240px;
+  height: 235px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu li {
+  position: absolute;
+  left: 0;
+  list-style: none;
+  transition: 0.5s;
+  transition-delay: calc(0.1s * var(--i));
+  transform-origin: 140px;
+  transform: rotate(0deg) translateX(110px);
+}
+/* Animations */
+.menu.active li {
+  transform: rotate(calc(360deg / 8 * var(--i)) ) translateX(0px);
+}
+.menu li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px ;
+  height: 60px;
+  color: var(--clr);
+  border: 2px solid var(--clr);
+  border-radius: 50%;
+  font-size: 1.5em;
+  transform: rotate(calc(360deg / -8 * var(--i)));
+  transition: 1s;
+}
+.menu li a:hover {
+  transition: 0;
+  background: var(--clr);
+  color: #333;
+  box-shadow: 0 0 10px var(--clr),
+  0 0 30px var(--clr),
+  0 0 50px var(--clr); 
+}
+.toggle:hover {
+  filter: grayscale(100%);
+  box-shadow: 0 0 10px #fff; 
+}
+.menu .toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: #2f363e;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color:white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  z-index: 10000;
+  font-size: 2rem;
+  transition: trasform 2.25s;
+}
