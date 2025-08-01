@@ -4,8 +4,12 @@
 
 @theme {
   --font-marcellous : "Marcellus",serif;
-   --font-inter: "Inter", sans-serif;
 }
+
+body {
+  font-family: 'Satoshi', sans-serif;
+}
+
 
 
 /* FOR HEADLINE CONTINUESLY */
@@ -50,6 +54,9 @@
   white-space: nowrap;
 }
 
+  .review-ticker-wrapper:hover .review-ticker {
+  animation-play-state: paused;
+}
 
 
 @keyframes scroll-review {
@@ -65,7 +72,6 @@
 
 :root {
 	--cards: 4;
-	--cardHeight: 87vh;
 	--cardTopPadding: 1.5em;
 	--cardMargin: 4vw;
 }
@@ -210,3 +216,21 @@ h2 {
   font-size: 2rem;
   transition: trasform 2.25s;
 }
+
+
+/* FOR CIRCLE */
+
+/* App.css */
+@keyframes rotateCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-rotate {
+  animation: rotateCircle 10s infinite linear;
+}
+

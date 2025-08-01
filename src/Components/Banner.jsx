@@ -1,44 +1,62 @@
-import React from 'react'
+import React from "react";
 
 const Banner = () => {
   return (
-    <div className="bg-[linear-gradient(to_right,_#edeaf1,_#ece7f2,_#e5dcf1)] w-full py-10 font-inter">
-      <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center px-4 sm:px-6 lg:px-8 gap-8">
-        
-        {/* Text Section */}
-        <div className="w-full md:w-1/2 flex flex-col gap-4">
-          <p className="text-sm sm:text-base bg-white w-fit px-4 py-2 rounded text-center shadow">
+    <div className="relative bg-[linear-gradient(to_right,_#edeaf1,_#ece7f2,_#e5dcf1)] w-full h-full font-inter overflow-hidden">
+      <img
+        src="./53.png"
+        alt=""
+        className="absolute xl:top-44 lg:top-20 md:top-20 top-20 left-0 xl:w-auto xl:h-auto w-20 h-20 lg:w-20 lg:h-20 md:w-20 md:h-20  z-10"
+      />
+
+      <img
+        src="./52.png"
+        alt=""
+        className="absolute bottom-0 left-0 w-56 h-56 rounded-full z-10"
+      />
+
+      <div className="w-full flex flex-col md:flex-row md:items-center md:justify-between">
+        <div className="md:w-1/2 w-full flex flex-col md:items-start items-center gap-6 2xl:ml-20 xl:ml-20 md:ml-6 py-10 2xl:gap-8">
+          <p className="p-2 text-[#400185] font-semibold bg-white lg:w-44 xl:w-52 md:w-40 w-44 2xl:w-96 text-center 2xl:text-3xl xl:text-lg text-sm">
             Hi, I’m Dr. Kami Owen
           </p>
-          <h1 className="text-3xl font-marcellous sm:text-4xl lg:text-4xl md:text-2xl font-semibold leading-tight">
-            Transform Every Layer of <br className="hidden sm:block" /> Your Health
+          <h1 className="xl:text-6xl 2xl:text-9xl font-marcellous md:text-start text-center lg:text-5xl md:text-3xl text-4xl">
+            Transform Every Layer of{" "}
+            <span className="text-[#400185]">Your Health</span>
           </h1>
-          <p className="text-gray-600 text-sm sm:text-base">
-            Discover healing through our Five Bodies Integrative Medicine system aligning Physical, Vital, Mental, Supermental, and Bliss bodies.
+          <p className="text-[#727272] 2xl:text-3xl xl:text-lg lg:text-sm md:text-sm text-sm md:text-start text-center">
+            Discover healing through our Five Bodies Integrative Medicine system
+            aligning Physical, Vital, Mental, Supermental, and Bliss bodies.
           </p>
-          <div className="flex flex-wrap gap-4 mt-4">
-            <button className="
-            px-6 py-3
-             bg-black text-white rounded-full hover:bg-gray-800 transition">
+          <div className="flex items-center md:justify-start justify-center gap-6">
+            <button className="p-3 2xl:p-5 bg-black text-white rounded-full 2xl:text-3xl xl:text-lg lg:text-sm md:text-sm text-sm">
               Book Appointment
             </button>
-            <button className="px-6 py-3 border border-black rounded-full hover:bg-gray-100 transition">
+            <button className="2xl:text-3xl xl:text-lg lg:text-sm md:text-sm text-sm">
               Contact Us
             </button>
           </div>
+          <div className="flex items-center gap-4 ml-6">
+            <img src="./70.png" alt="" className="hover:cursor-pointer"/><img src="./71.png" alt="" className="hover:cursor-pointer"/><img src="./71.png" alt="" className="hover:cursor-pointer"/>
+          </div>
         </div>
 
-        {/* Image Section */}
-        <div className="w-full md:w-1/2 flex justify-center">
+        <div className="md:w-1/2 w-full md:ml-10 ml-0 relative">
+          <img
+            src="./52.png"
+            alt=""
+            className="absolute top- bottom-0 left-[-80px] transform -translate-y-1/2 w-32 h-32 rounded-full z-10"
+          />
+
           <img
             src="./50.png"
             alt="Banner"
-            className="w-full max-w-md sm:max-w-lg md:max-w-full h-auto object-contain rounded"
+            className="h-full w-full object-contain rounded relative z-20"
           />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Banner
+export default Banner;
