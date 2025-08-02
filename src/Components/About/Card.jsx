@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
+import Text from "../Common/Text";
 
 const cardData = [
   {
@@ -38,7 +39,7 @@ const cardData = [
 
 const Card = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-10 font-inter">
+    <div className="max-w-7xl mx-auto px-4 py-10 lg:py-20 font-inter">
       <ul className="flex flex-col gap-10">
         {cardData.map((card, index) => (
           <li
@@ -49,12 +50,12 @@ const Card = () => {
               className={`rounded-3xl shadow-lg  p-6 md:p-10 flex flex-col lg:flex-row gap-6 items-center ${card.bg} min-h-[100vh] md:min-h-0`}
             >
               <div className="flex-1 flex flex-col gap-3">
-                <h1 className="text-2xl md:text-3xl font-semibold font-marcellous">
+                <Text variant="text5" className=" font-semibold font-marcellous">
                   {card.name}
-                </h1>
-                <p className="text-[#400186] font-medium font-marcellous">{card.title}</p>
-                <p className="font-bold">{card.position}</p>
-                <p className="text-sm">
+                </Text>
+                <Text variant="text4" className="text-[#400186] font-medium font-marcellous">{card.title}</Text>
+                <Text variant="text1" className="font-bold">{card.position}</Text>
+                <Text variant="text1" className="text-sm">
                   Katie’s career in healthcare began in 2007 as an RN in the
                   Emergency Department. She gained a wealth of knowledge,
                   skills, and experience quickly and loved the fast pace. After 5
@@ -69,16 +70,16 @@ const Card = () => {
                   complementary therapies, and lifestyle interventions. She has
                   been an integral part of the development of our Weight Loss
                   Program.
-                </p>
-                <p className="text-sm">
+                </Text>
+                <Text variant="text1" className="text-sm">
                   Her proven success as a leader has earned her a promotion to
                   our Health Category Manager where she provides guidance in the
                   development and expansion of our product selection and
                   treatments provided to support our healthy body and mind.
-                </p>
-                <span className="flex items-center gap-2 text-[#400186] font-medium cursor-pointer">
+                </Text>
+                <Text variant="text1" className="flex items-center gap-2 text-[#400186] font-medium cursor-pointer">
                   View More <FaArrowRightLong />
-                </span>
+                </Text>
               </div>
               <div className="flex-shrink-0 w-full md:w-auto">
                 <img

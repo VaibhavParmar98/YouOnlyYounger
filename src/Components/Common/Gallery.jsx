@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Text from './Text';
 
 // Optional: You can use a custom hook or media query package instead
 const isMobile = () => window.innerWidth <= 768;
@@ -35,16 +36,16 @@ const Gallery = () => {
   };
 
   return (
-    <div className="bg-[#F6F6F6] py-10 px-4 sm:px-6 md:px-8">
+    <div className="bg-[#F6F6F6] py-10 lg:py-20 px-4 sm:px-6 md:px-8">
       {/* Header */}
       <div className="flex flex-col gap-3 text-center mb-8">
-        <h1 className="2xl:text-7xl xl:text-5xl lg:text-4xl md:text-3xl  text-3xl  font-marcellous">
+        <Text variant='text5' className="  font-marcellous">
           Before & After Gallery
-        </h1>
-        <p className="2xl:text-3xl xl:text-xl lg:text-xl text-lg max-w-4xl mx-auto leading-relaxed font-inter">
+        </Text>
+        <Text variant='text1' className="2xl:text-3xl xl:text-xl lg:text-xl text-lg max-w-4xl mx-auto leading-relaxed font-inter">
           See real transformations from our clients. These before and after photos showcase the
           visible results of our expert care and treatments.
-        </p>
+        </Text>
       </div>
 
       {/* Responsive Gallery */}

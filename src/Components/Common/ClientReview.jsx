@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import { FaStar } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Text from "./Text";
 
 const ClientReview = () => {
   const reviews = [
@@ -54,7 +55,7 @@ const ClientReview = () => {
   };
 
   const ReviewCard = ({ item }) => (
-    <div className=" w-72 mx-auto bg-white rounded-t-lg rounded-b-lg overflow-hidden flex-shrink-0 flex flex-col">
+    <div className=" w-72 mx-auto bg-white rounded-t-lg py-10 lg:py-20 rounded-b-lg overflow-hidden flex-shrink-0 flex flex-col">
       <img
         src={item.img}
         alt={item.name}
@@ -63,16 +64,16 @@ const ClientReview = () => {
 
       <div className="flex flex-col flex-grow justify-between h-full">
         <div>
-          <h3 className="text-xl p-2  mt-2 font-marcellous">{item.title}</h3>
+          <Text variant="text4" className=" p-2  mt-2 font-marcellous">{item.title}</Text>
 
           {/* ✅ FIX: Use normal text wrapping */}
-          <p className="text-sm px-2 text-gray-700 mt-1 whitespace-normal break-words leading-normal">
+          <Text variant="text1" className="px-2 text-gray-700 mt-1 whitespace-normal break-words leading-normal">
             {item.desc}
-          </p>
+          </Text>
         </div>
 
         <div className="mt-2 px-2 pb-2">
-          <p className="text-sm mt-1"> {item.name}</p>
+          <Text variant="text3" className=" mt-1 font-semibold"> {item.name}</Text>
           <div className="flex items-center space-x-1 text-yellow-400 mt-1">
             {[...Array(5)].map((_, i) => (
               <FaStar
@@ -89,13 +90,13 @@ const ClientReview = () => {
   return (
     <div className="pt-10 pb-16 bg-[#F6F6F6] overflow-hidden">
     <div className="flex mb-6 flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-4 md:px-10">
-  <h1 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-marcellous mb-4 md:mb-0">
+  <Text variant="text5" className=" font-marcellous mb-4 md:mb-0">
     Client Testimonials
-  </h1>
+  </Text>
   
-  <p className="lg:p-3 md:p-2  rounded-full border cursor-pointer text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl md:block hidden">
+  <Text variant="text1" className="lg:p-3 md:p-2  rounded-full border cursor-pointer  md:block hidden">
     See all
-  </p>
+  </Text>
 </div>
 {" "}
       {/* ✅ Ticker: show only on lg and above */}

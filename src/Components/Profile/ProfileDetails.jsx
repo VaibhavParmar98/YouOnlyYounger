@@ -1,8 +1,10 @@
 import React from "react";
+import Button from "../Common/Button";
+import Text from "../Common/Text";
 
 const ProfileDetails = () => {
   return (
-    <div className="bg-[#F6F6F6] py-10">
+    <div className="bg-[#F6F6F6] py-10 lg:py-20">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-6 px-4 font-inter">
         {/* Image Section */}
         <div className="w-full lg:w-1/2 flex items-center justify-center">
@@ -14,11 +16,11 @@ const ProfileDetails = () => {
         </div>
 
         {/* Text Section */}
-        <div className="w-full lg:w-1/2 flex flex-col gap-4">
-          <h1 className="text-2xl sm:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-semibold text-[#400186] font-marcellous">
+        <div className="w-full lg:w-1/2 text-center lg:text-start flex flex-col gap-1">
+          <Text variant="text5" className="   font-marcellous">
             Welcome to our Integrative Medicine Center
-          </h1>
-          <p className="text-sm 2xl:text-lg xl:text-xl lg:text-sm sm:text-base text-gray-700">
+          </Text>
+          <Text variant="text1" className=" ">
             People face a wide range of mental and physical health concerns that
             conventional medicine can’t solve. Issues like depression, anxiety,
             chronic pain, loss of energy, and other such conditions can wreak
@@ -26,8 +28,8 @@ const ProfileDetails = () => {
             only adds to your stress. In most cases, conventional treatments and
             medications alleviate some of your immediate symptoms while causing
             numerous other side effects necessitating treatments.
-          </p>
-          <p className="text-sm 2xl:text-lg xl:text-xl lg:text-sm sm:text-base text-gray-700">
+          </Text>
+          <Text variant="text1" className=" ">
             You Only Younger understands the frustration associated with trying
             to find answers to your health concerns. Conventional medicine falls
             short because it has a myopic view of your health, looking at you as
@@ -35,10 +37,8 @@ const ProfileDetails = () => {
             wide range of holistic, integrative, and functional treatments to
             foster natural healing and address the root cause of your physical
             and emotional concerns.
-          </p>
-          <button className="w-fit px-6 xl:text-xl py-2 text-white bg-[#400186] rounded-full hover:bg-[#310066] transition">
-            About me
-          </button>
+          </Text>
+         <Button className="w-40 mt-3 self-center lg:self-start">About Me</Button>
         </div>
       </div>
     </div>

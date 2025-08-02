@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
+import Text from "./Text";
 
 const FandQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -32,7 +33,7 @@ const FandQ = () => {
   };
 
   return (
-    <div className="relative 2xl:max-w-7xl xl:max-w-5xl lg:max-w-3xl max-w-xl mx-auto px-4 py-12 font-inter">
+    <div className="relative 2xl:max-w-7xl xl:max-w-5xl lg:max-w-3xl max-w-xl mx-auto px-4 py-10 lg:py-20 font-inter">
       
       {/* Left-side image */}
       <img
@@ -41,9 +42,9 @@ const FandQ = () => {
         className=" absolute 2xl:-left-80 2xl:top-44 lg:-left-60 lg:top-36 md:-left-30 md:top-56 lg:w-64 lg:h-64 md:w-44 md:h-44"
       />
 
-      <h1 className="2xl:text-7xl xl:text-5xl lg:text-4xl md:text-3xl text-3xl text-center mb-10 font-marcellous">
+      <Text variant="text5" className=" text-center mb-10 font-marcellous">
         Frequently Asked Questions
-      </h1>
+      </Text>
 
       <div className="space-y-4 relative z-20">
         {questions.map((item, index) => (
@@ -59,9 +60,9 @@ const FandQ = () => {
               onClick={() => toggle(index)}
               className="flex justify-between items-center cursor-pointer"
             >
-              <span className="font-medium 2xl:text-3xl xl:text-xl lg:text-xl text-lg text-gray-800 font-marcellous">
+              <Text variant="text3" className="font-medium  text-gray-800 font-marcellous">
                 {index + 1}. {item.ques}
-              </span>
+              </Text>
               <div className="bg-[#400186] p-2">
                 {activeIndex === index ? (
                   <FaMinus size={12} className="text-white" />
@@ -71,9 +72,9 @@ const FandQ = () => {
               </div>
             </div>
             {activeIndex === index && (
-              <div className="mt-4 leading-relaxed lg:text-2xl text-sm">
+              <Text variant="text3" className="mt-4 leading-relaxed ">
                 {item.ans}
-              </div>
+              </Text>
             )}
           </div>
         ))}

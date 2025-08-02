@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
+import Text from "./Text";
 
 const ImbalanceSignsSection = () => {
   const signs = [
@@ -12,7 +13,7 @@ const ImbalanceSignsSection = () => {
   ];
 
   return (
-    <section className="bg-gray-100 px-4 py-10 rounded-xl relative">
+    <section className="bg-gray-100 px-4 py-10 lg:py-20 rounded-xl relative">
       <img
         src="./31.png"
         alt="Side Decoration"
@@ -22,16 +23,16 @@ const ImbalanceSignsSection = () => {
       <div className="max-w-7xl relative z-10 mx-auto flex flex-col lg:flex-row items-center justify-between gap-10">
         {/* Left Section */}
         <div className="w-full lg:w-1/2">
-          <h1 className="text-3xl md:text-4xl  mb-4 font-marcellous">
+          <Text variant="text5" className=" mb-4 text-center lg:text-left font-marcellous">
             When This Body Is Out of Balance
-          </h1>
-          <h3 className="text-xl md:text-2xl text-[#400186] mb-6 font-marcellous">
+          </Text>
+          <Text variant="text4" className=" text-[#400186] text-center lg:text-left mb-6 font-marcellous">
             What Are the Signs of Imbalance?
-          </h3>
+          </Text>
 
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700">
             {signs.map((sign, index) => (
-              <li key={index} className="flex gap-2 items-start text-sm">
+              <li key={index} className="flex gap-2 items-start text-[12px] md:text-[14px] lg:text-[16px]">
                 <FaCheckCircle className="text-[#400186] mt-1" />
                 {sign}
               </li>
@@ -43,10 +44,10 @@ const ImbalanceSignsSection = () => {
         <div className="w-full lg:w-1/2 flex flex-col sm:flex-row items-center justify-center gap-6">
           {/* Stats Box */}
           <div className="bg-[#400186] text-white py-4 px-6 rounded-lg text-center w-full sm:w-auto">
-            <p className="text-lg">
-              <span className="text-4xl font-semibold">500+</span> <br />
+            <Text variant="text3">
+              <Text variant="text6" className=" font-semibold">500+</Text> <br />
               Happy Customers
-            </p>
+            </Text>
           </div>
 
           {/* Image */}

@@ -7,6 +7,8 @@ import {
   Instagram,
   Youtube,
 } from "lucide-react";
+import Text from "./Text";
+import Button from "./Button";
 
 const Footer = () => {
   return (
@@ -22,99 +24,97 @@ const Footer = () => {
       <div className="relative z-40 bg-[#400186]">
         <footer className="py-10 px-4 sm:px-6 md:px-8 max-w-7xl mx-auto">
           {/* Top section */}
-          <div className="flex flex-col lg:flex-row gap-44">
+          <div className="flex flex-col lg:flex-row xl:gap-44 gap-10">
             {/* Left Column */}
             <div className="lg:w-1/2 flex flex-col gap-6">
-              <img src="./6.png" alt="Logo" className="w-40 sm:w-52" />
-              <p className="text-lg leading-relaxed">
+              <img src="./6.png" alt="Logo" className="w-40 sm:w-52 lg:self-start self-center" />
+              <Text variant="text1" className=" leading-relaxed text-center lg:text-start">
                 At You Only Younger, we go beyond treating symptoms — we uncover
                 the root cause and guide you through personalized, proven steps
                 to lasting, whole-body health.
-              </p>
-              <img src="./45.png" alt="Sub Logo" className="w-32 sm:w-44" />
+              </Text>
+              <img src="./45.png" alt="Sub Logo" className="w-32 sm:w-44 lg:self-start self-center" />
               <hr className="border-white/40" />
 
-              <div className="flex items-center gap-6">
+              <div className="flex items-center gap-6 lg:self-start self-center">
                 <Facebook size={18} className="cursor-pointer hover:text-gray-300" />
                 <Instagram size={18} className="cursor-pointer hover:text-gray-300" />
                 <Youtube size={18} className="cursor-pointer hover:text-gray-300" />
               </div>
 
-              <button className="bg-white text-black px-6 py-2 rounded-full w-fit hover:bg-gray-200 transition">
-                Contact us
-              </button>
+              <Button variant="colourWhite" className="w-44 lg:self-start self-center">Contact Us</Button>
             </div>
 
             {/* Right Column */}
-            <div className="lg:w-1/2 flex flex-col gap-8">
+            <div className="lg:w-1/2 flex flex-col md:gap-8 gap-2">
               {/* Contact and Hours */}
               <div className="flex flex-col sm:flex-row gap-10 w-full">
                 {/* Let’s Chat */}
-                <div className="flex flex-col gap-4 w-1/2">
-                  <h3 className="text-3xl font-marcellous">Let’s Chat</h3>
-                  <div className="flex items-center gap-2 text-sm sm:text-base">
-                    <Phone size={16} />
-                    <span>+1 (346) 746-6759</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm sm:text-base">
+                <div className="flex flex-col gap-4 md:w-1/2 w-full">
+                  <Text variant="text4" className=" font-marcellous text-center mlg:text-start">Let’s Chat</Text>
+                  <Text variant="text1" className="flex items-center gap-2 justify-center lg:items-start lg:justify-start">
+                    <Phone size={16} className="text-center md:text-start"/>
+                    <span className="text-center md:text-start">+1 (346) 746-6759</span>
+                  </Text>
+                  <Text variant="text1" className="flex items-center gap-2 justify-center lg:items-start lg:justify-start">
                     <Mail size={16} />
                     <span>Info@YouOnlyYounger.com</span>
-                  </div>
-                  <div className="flex gap-2 text-sm sm:text-base">
+                  </Text>
+                  <Text variant="text1" className="flex gap-2 justify-center lg:items-start lg:justify-start">
                     <MapPin size={18} />
                     <span>
                       Greatwood Professional Center <br />
                       7002 Riverbrook Suite 700 <br />
                       Sugar Land, TX 77479
                     </span>
-                  </div>
+                  </Text>
                 </div>
 
                 {/* Clinic Hours */}
-                <div className="flex flex-col gap-1 text-base w-1/2">
-                  <h3 className="text-3xl font-marcellous">Clinic Hours</h3>
-                  <p className="mt-3">Mon–Wed: 9:00am—5:00pm</p>
-                  <p>Thurs: 11:00am—5:00pm, After 6pm by Appt</p>
-                  <p>Fri: 9:00am—5:00pm</p>
-                  <p>Sat: 9:00am—3:00pm</p>
-                  <p>Sun: Closed</p>
+                <div className="flex flex-col gap-1 text-base md:w-1/2 w-full text-center lg:text-start ">
+                  <Text variant="text4" className=" font-marcellous text-center lg:text-start">Clinic Hours</Text>
+                  <Text variant="text1" className="mt-3">Mon–Wed: 9:00am—5:00pm</Text>
+                  <Text variant="text1">Thurs: 11:00am—5:00pm, After 6pm by Appt</Text>
+                  <Text variant="text1">Fri: 9:00am—5:00pm</Text>
+                  <Text variant="text1">Sat: 9:00am—3:00pm</Text>
+                  <Text variant="text1">Sun: Closed</Text>
                 </div>
               </div>
 
               {/* URLs */}
-              <div className="flex flex-col gap-3">
-                <h3 className="text-3xl font-marcellous">URLs</h3>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 text-sm sm:text-base">
-                  <a href="#">About</a>
-                  <a href="#">Med spa</a>
-                  <a href="#">Health</a>
-                  <a href="#">Healing</a>
-                  <a href="#">Gallery</a>
-                  <a href="#">Contact</a>
-                  <a href="#">Blog</a>
-                  <a href="#">FAQ’s</a>
-                  <a href="#">Privacy Policy</a>
-                  <a href="#">Conditions</a>
-                  <a href="#">Careers</a>
+              <div className="flex flex-col gap-3 mt-6 md:mt-0">
+                <Text variant="text4" className=" font-marcellous text-center lg:text-start">URLs</Text>
+                <div className="grid  grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 text-sm sm:text-base">
+                  <Text variant="text1" className="text-center lg:items-start">About</Text>
+                  <Text variant="text1" className="text-center lg:items-start">Med spa</Text>
+                  <Text variant="text1" className="text-center lg:items-start">Health</Text>
+                  <Text variant="text1" className="text-center lg:items-start">Healing</Text>
+                  <Text variant="text1" className="text-center lg:items-start">Gallery</Text>
+                  <Text variant="text1" className="text-center lg:items-start">Contact</Text>
+                  <Text variant="text1" className="text-center lg:items-start">Blog</Text>
+                  <Text variant="text1" className="text-center lg:items-start">FAQ’s</Text>
+                  <Text variant="text1" className="text-center lg:items-start">Privacy Policy</Text>
+                  <Text variant="text1" className="text-center lg:items-start">Conditions</Text>
+                  <Text variant="text1" className="text-center lg:items-start">Careers</Text>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Accessibility Note */}
-          <div className="mt-8 text-sm sm:text-base text-center leading-relaxed">
+          <Text variant="text1" className="mt-8  text-center leading-relaxed">
             <strong>Accessibility:</strong> If you are vision-impaired or have some
             other impairment covered by the Americans with Disabilities Act or a
             similar law, and you wish to discuss potential accommodations related
             to using this website, please contact our Accessibility Manager at{" "}
             <a href="tel:+13467466759" className="underline">(346) 746-6759</a>.
-          </div>
+          </Text>
         </footer>
 
         {/* Bottom Bar */}
-        <div className="p-3 border-t border-white text-center text-xs sm:text-sm">
+        <Text variant="text1" className="p-3 border-t border-white text-center ">
           © youonlyyounger 2025. All Rights Reserved.
-        </div>
+        </Text>
       </div>
     </div>
   );

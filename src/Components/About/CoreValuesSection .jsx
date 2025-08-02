@@ -1,4 +1,6 @@
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
+import Button from "../Common/Button";
+import Text from "../Common/Text";
 
 const CoreValuesSection = () => {
   const values = [
@@ -29,7 +31,7 @@ const CoreValuesSection = () => {
   ];
 
   return (
-    <div className="bg-[#F6F6F6] py-10 px-4 sm:px-6 md:px-8 font-inter relative">
+    <div className="bg-[#F6F6F6] py-10 lg:py-20 px-4 sm:px-6 md:px-8 font-inter relative p-3 md:p-0">
        <img
         src="./31.png"
         alt="Side Decoration"
@@ -48,26 +50,28 @@ const CoreValuesSection = () => {
           </div>
 
           {/* Right Content */}
-          <div className="w-full lg:w-1/2 flex flex-col justify-between">
+          <div className="w-full lg:w-1/2 text-center lg:text-left flex flex-col justify-between">
             <div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 font-marcellous">
+              <Text variant="text5" className=" font-marcellous">
                 Our Core Values:
-              </h2>
-              <p className="text-sm sm:text-base leading-relaxed">
+              </Text>
+              <Text variant="text1">
                 We are rooted in purpose and integrity, guided by compassion,
                 trust, and mindfulness to deliver holistic care with lasting
                 impact and intention.
-              </p>
+              </Text>
 
               {/* Values List */}
-              <ul className="space-y-2 mt-4">
+              <ul className="space-y-2 mt-4 text-left">
                 {values.map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <IoIosCheckmarkCircleOutline className="text-[#400186] text-xl flex-shrink-0 mt-1" />
-                    <p className="text-sm sm:text-base leading-relaxed">
-                      <span className="font-semibold">{item.title}:</span>{" "}
+                    <Text variant="text1">
+                       <span className="font-semibold">{item.title}:</span>{" "}
                       {item.desc}
-                    </p>
+                    </Text>
+                     
+                    
                   </li>
                 ))}
               </ul>
@@ -75,9 +79,7 @@ const CoreValuesSection = () => {
 
             {/* Button */}
             <div className="mt-6">
-              <button className="bg-[#400186] text-white px-6 py-3 rounded-full shadow hover:bg-purple-800 transition text-sm sm:text-base">
-                Contact us
-              </button>
+             <Button>Contact Us</Button>
             </div>
           </div>
         </div>

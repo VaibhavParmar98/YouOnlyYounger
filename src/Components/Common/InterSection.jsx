@@ -1,4 +1,6 @@
 import { IoMdPlayCircle } from "react-icons/io";
+import Button from "./Button";
+import Text from "./Text";
 
 const InterSection = () => {
   return (
@@ -12,26 +14,11 @@ const InterSection = () => {
       <div className="absolute inset-0 bg-black/50 z-10"></div>
 
       <div className="absolute inset-0 z-20 flex items-center justify-center flex-col gap-2 xs:gap-3 sm:gap-4 md:gap-5 lg:gap-6 xl:gap-8 max-w-[1536px] mx-auto px-4">
-        <h1 className="text-white font-marcellous text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl  2xl:text-9xl font-bold text-center leading-tight sm:leading-snug md:leading-normal">
+        <Text  className="text-white text-[30px] md:text-[40px] lg:text-[50px] xl:text-[72px] font-marcellous  text-center leading-tight sm:leading-snug md:leading-normal">
           Aligned Through Mind, <br />Body, and Energy.
-        </h1>
-        <button
-          className="flex items-center font-inter gap-1 xs:gap-2 sm:gap-3 rounded-full  bg-[#400186] text-white hover:bg-[#5e1abf] transition-colors 
-          p-2 
-          md:py-2  md:p-4 
-          lg:py-2 lg:px-4
-          xl:p-3
-          2xl:py-6 2xl:px-9
-          text-xs 
-          md:text-lg 
-          lg:text-xl
-          xl:text-2xl
-          2xl:text-5xl"
-          aria-label="Watch Showreel"
-        >
-          <IoMdPlayCircle className="text-xl xs:text-2xl sm:text-3xl  md:text-4xl lg:text-5xl 2xl:text-8xl" />
-          Watch Showreel
-        </button>
+        </Text>
+        <button className="flex bg-[#400186] text-white rounded-full items-center xl:px-5 xl:py-3 lg:py-2 lg:px-4 md:py-1.5 md:px-3 py-1.5 px-3 gap-3 text-[16px] md:text-[18px] lg:text-[20px]">          <IoMdPlayCircle  className="text-[20px] md:text-[20px] lg:text-[36px]"/>
+Watch Showreel</button>
       </div>
     </div>
   );

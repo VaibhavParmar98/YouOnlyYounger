@@ -1,4 +1,5 @@
 import React from "react";
+import Text from "../Common/Text";
 
 const HealthServices = () => {
   const services = [
@@ -29,7 +30,7 @@ const HealthServices = () => {
   ];
 
   return (
-    <div className="bg-white py-12 px-4 max-w-7xl mx-auto">
+    <div className="bg-white py-10 lg:py-20 px-4 max-w-7xl mx-auto">
       <div className="grid md:grid-cols-3 gap-4 text-center">
         {services.map((service) => (
           <div
@@ -43,19 +44,19 @@ const HealthServices = () => {
               className="w-full h-56 object-cover p-2"
             />
             {/* Tag */}
-            <div className="bg-purple-100 text-purple-900 text-sm font-semibold uppercase text-center py-2">
+            <Text variant="text1" className="bg-purple-100 text-purple-900  font-semibold uppercase text-center py-2">
               {service.tag}
-            </div>
+            </Text>
             {/* Content */}
             <div className="p-6 flex flex-col flex-grow">
-              <h3 className="text-xl font-semibold mb-3 font-marcellous">{service.title}</h3>
-              <p className="text-gray-600 text-sm mb-6 flex-grow">{service.desc}</p>
-              <p
+              <Text variant="text4" className="  mb-3 font-marcellous">{service.title}</Text>
+              <Text variant="text1" className="text-gray-600  mb-6 flex-grow">{service.desc}</Text>
+              <Text variant="text1"
                 // href={service.link}
-                className="text-purple-700 font-semibold text-sm justify-center cursor-pointer hover:underline flex items-center gap-1"
+                className="text-[#400186] font-semibold text-sm justify-center cursor-pointer hover:underline flex items-center gap-1"
               >
                 Learn More <span className="text-lg">→</span>
-              </p>
+              </Text>
             </div>
           </div>
         ))}

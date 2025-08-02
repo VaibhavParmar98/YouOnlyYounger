@@ -28,8 +28,8 @@ import { NavLink } from "react-router-dom";
                 <NavLink to="/contact" className="hover:underline text-sm xl:text-base 2xl:text-lg">Career</NavLink>
               </div>
               <div className="hidden lg:flex gap-2 xl:gap-4">
-                <button className="p-2 xs:p-2.5 bg-black text-white rounded-full cursor-pointer text-xs xl:text-sm 2xl:text-base">Book Appointment</button>
-                <button className="p-2 xs:p-2.5 hover:underline border rounded-full cursor-pointer text-xs xl:text-sm 2xl:text-base">Contact Us</button>
+                <button className="p-3 bg-black text-white rounded-full cursor-pointer text-xs xl:text-sm 2xl:text-base">Book Appointment</button>
+                <button className="p-2 hover:underline border rounded-full cursor-pointer text-xs xl:text-sm 2xl:text-base">Contact Us</button>
               </div>
               <div className="lg:hidden">
                 <button onClick={toggleMenu} className="text-black focus:outline-none">
@@ -40,19 +40,23 @@ import { NavLink } from "react-router-dom";
               </div>
             </div>
             {isMenuOpen && (
-              <div className="lg:hidden mt-4 flex flex-col items-center gap-2">
-                <NavLink to="/" className="hover:underline text-sm" onClick={toggleMenu}>Home</NavLink>
-                <NavLink to="/about" className="hover:underline text-sm" onClick={toggleMenu}>About</NavLink>
-                <NavLink to="/conditions" className="hover:underline text-sm" onClick={toggleMenu}>Conditions</NavLink>
-                <NavLink to="/med-spa" className="hover:underline text-sm" onClick={toggleMenu}>Med Spa</NavLink>
-                <NavLink to="/health" className="hover:underline text-sm" onClick={toggleMenu}>Health</NavLink>
-                <NavLink to="/profile" className="hover:underline text-sm" onClick={toggleMenu}>Healing</NavLink>
-                <NavLink to="/gallery" className="hover:underline text-sm" onClick={toggleMenu}>Gallery</NavLink>
-                <NavLink to="/contact" className="hover:underline text-sm" onClick={toggleMenu}>Blog</NavLink>
-                <NavLink to="/career" className="hover:underline text-sm" onClick={toggleMenu}>Career</NavLink>
-                <button className="p-2 bg-black text-white rounded-full cursor-pointer text-xs w-full max-w-xs">Book Appointment</button>
+              <>
+              <div className="lg:hidden mt-4 grid grid-cols-2 items-center gap-2">
+                <NavLink to="/" className="text-sm hover:bg-gray-200 p-1 rounded " onClick={toggleMenu}>Home</NavLink>
+                <NavLink to="/about" className="hover:underline text-sm hover:bg-gray-200 p-1 rounded " onClick={toggleMenu}>About</NavLink>
+                <NavLink to="/mental-body" className="hover:underline text-sm hover:bg-gray-200 p-1 rounded " onClick={toggleMenu}>Conditions</NavLink>
+                <NavLink to="/msuper-mental-body" className="hover:underline text-sm hover:bg-gray-200 p-1 rounded " onClick={toggleMenu}>Med Spa</NavLink>
+                <NavLink to="/profile" className="hover:underline text-sm hover:bg-gray-200 p-1 rounded " onClick={toggleMenu}>Health</NavLink>
+                <NavLink to="/healing" className="hover:underline text-sm hover:bg-gray-200 p-1 rounded " onClick={toggleMenu}>Healing</NavLink>
+                <NavLink to="/gallery" className="hover:underline text-sm hover:bg-gray-200 p-1 rounded " onClick={toggleMenu}>Gallery</NavLink>
+                <NavLink to="/vital-body" className="hover:underline text-sm hover:bg-gray-200 p-1 rounded " onClick={toggleMenu}>Blog</NavLink>
+                <NavLink to="/Contact" className="hover:underline text-sm hover:bg-gray-200 p-1 rounded " onClick={toggleMenu}>Career</NavLink>
+             </div>
+             <div className=" flex gap-3 mt-6">
+                  <button className="p-2 bg-black text-white rounded-full cursor-pointer text-xs w-full max-w-xs">Book Appointment</button>
                 <button className="p-2 hover:underline border rounded-full cursor-pointer text-xs w-full max-w-xs">Contact Us</button>
-              </div>
+</div> 
+</>
             )}
           </div>
         </div>

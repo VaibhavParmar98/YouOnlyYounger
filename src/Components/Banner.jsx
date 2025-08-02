@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Common/Button";
 
 const Banner = () => {
   return (
@@ -16,28 +17,28 @@ const Banner = () => {
       />
 
       <div className="w-full flex flex-col md:flex-row md:items-center md:justify-between">
-        <div className="md:w-1/2 w-full flex flex-col md:items-start items-center gap-6 2xl:ml-20 xl:ml-20 md:ml-6 py-10 2xl:gap-8">
-          <p className="p-2 text-[#400185] font-semibold bg-white lg:w-44 xl:w-52 md:w-40 w-44 2xl:w-96 text-center 2xl:text-3xl xl:text-lg text-sm">
+        <div className="md:w-1/2 w-full flex flex-col md:items-start text-center md:text-left items-center gap-3 2xl:ml-20 xl:ml-20 md:ml-6 py-10 2xl:gap-8">
+          <p className="lg:text-[16px] md:text-[14px] text-[12px] font-bold bg-white text-[#400186] px-2">
             Hi, I’m Dr. Kami Owen
           </p>
-          <h1 className="xl:text-6xl 2xl:text-9xl font-marcellous md:text-start text-center lg:text-5xl md:text-3xl text-4xl">
-            Transform Every Layer of{" "}
+          <h1 className="lg:text-[50px] md:text-[30px]  text-[28px] font-marcellous">
+            Transform Every Layer of <br className="xl:block md:hidden" />
             <span className="text-[#400185]">Your Health</span>
           </h1>
-          <p className="text-[#727272] 2xl:text-3xl xl:text-lg lg:text-sm md:text-sm text-sm md:text-start text-center">
+          <p className="text-[#727272] lg:text-[18px] md:text-[14px] text-[14px]">
             Discover healing through our Five Bodies Integrative Medicine system
             aligning Physical, Vital, Mental, Supermental, and Bliss bodies.
           </p>
-          <div className="flex items-center md:justify-start justify-center gap-6">
-            <button className="p-3 2xl:p-5 bg-black text-white rounded-full 2xl:text-3xl xl:text-lg lg:text-sm md:text-sm text-sm">
-              Book Appointment
-            </button>
-            <button className="2xl:text-3xl xl:text-lg lg:text-sm md:text-sm text-sm">
+          <div className="flex items-center md:justify-start justify-center mt-5 gap-6">
+            <Button variant="black">Book Appointment</Button>
+            <button className="lg:text-[16px] md:text-[14px] text-[12px]">
               Contact Us
             </button>
           </div>
-          <div className="flex items-center gap-4 ml-6">
-            <img src="./70.png" alt="" className="hover:cursor-pointer"/><img src="./71.png" alt="" className="hover:cursor-pointer"/><img src="./71.png" alt="" className="hover:cursor-pointer"/>
+          <div className="flex items-center gap-4 mt-3 ml-6">
+            <img src="./70.png" alt="" className="hover:cursor-pointer" />
+            <img src="./71.png" alt="" className="hover:cursor-pointer" />
+            <img src="./71.png" alt="" className="hover:cursor-pointer" />
           </div>
         </div>
 

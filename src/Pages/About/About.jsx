@@ -13,7 +13,8 @@ const About = () => {
   return (
     <div>
       <AboutBanner/>
-      <CoreValuesSection/>
+     
+        <CoreValuesSection/>
       <VisualFramewrok2/>
       <LicensesAndCertifications/>
       <Card/>

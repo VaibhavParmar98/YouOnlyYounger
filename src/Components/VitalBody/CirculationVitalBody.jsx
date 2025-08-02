@@ -1,9 +1,11 @@
 import React from 'react'
+import Button from '../Common/Button'
+import Text from '../Common/Text'
 
 const CirculationVitalBody = () => {
   return (
     <div>
-       <div className="py-10 xl:mt-40 lg:mt-20 mt-20">
+       <div className="py-10 lg:py-20 xl:mt-40 lg:mt-20 mt-20">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-6 px-4 font-inter">
         {/* Image Section */}
         <div className="w-full lg:w-1/2 flex items-center justify-center">
@@ -15,15 +17,13 @@ const CirculationVitalBody = () => {
         </div>
 
         {/* Text Section */}
-        <div className="w-full lg:w-1/2 flex flex-col gap-4">
-          <h1 className="text-2xl sm:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl  font-marcellous">
-The Body of Energy and Circulation          </h1>
-          <p className="text-sm 2xl:text-lg xl:text-xl lg:text-sm sm:text-base text-gray-700">
-The Vital Body is your energetic powerhouse—the invisible current that fuels every cell, organ, and system. It governs digestion, immunity, and overall vitality, ensuring that your physical body stays vibrant and resilient. When your Vital Body is balanced, you feel energetic, radiant, and alive; when depleted, fatigue and illness creep in.          </p>
+        <div className="w-full lg:w-1/2 text-center lg:text-left flex flex-col gap-4">
+          <Text variant='text5' className="  font-marcellous">
+The Body of Energy and Circulation          </Text>
+          <Text variant='text1' className=" ">
+The Vital Body is your energetic powerhouse—the invisible current that fuels every cell, organ, and system. It governs digestion, immunity, and overall vitality, ensuring that your physical body stays vibrant and resilient. When your Vital Body is balanced, you feel energetic, radiant, and alive; when depleted, fatigue and illness creep in.          </Text>
          
-          <button className="w-fit px-6 xl:text-xl py-2 text-white bg-[#400186] rounded-full hover:bg-[#310066] transition">
-            Contact Us
-          </button>
+          <Button className='w-44 self-center lg:self-start'>Contact Us</Button>
         </div>
       </div>
     </div>

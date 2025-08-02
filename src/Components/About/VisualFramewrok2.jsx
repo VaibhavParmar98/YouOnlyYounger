@@ -1,4 +1,5 @@
 import React from "react";
+import Text from "../Common/Text";
 
 const VisualFramewrok2 = () => {
   const cards = [
@@ -17,19 +18,19 @@ const VisualFramewrok2 = () => {
   ];
 
   return (
-    <section className="py-10 px-4 sm:px-6 md:px-8 bg-white font-inter">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-10 lg:py-20 px-4 sm:px-6 md:px-8 bg-white font-inter">
+      <div className="max-w-7xl mx-auto">
         {/* Main content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Text content */}
-          <div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-black font-marcellous">
+          <div className="text-center lg:text-left">
+            <Text variant="text5" className=" text-black font-marcellous">
               The Five Bodies Visual Framework
-            </h2>
-            <p className="text-[#400186] mt-2 text-base sm:text-lg font-medium mb-4 font-marcellous">
+            </Text>
+            <Text variant="text4" className="text-[#400186] mt-2  mb-4 font-marcellous">
               Quantum Integrative Medicine
-            </p>
-            <p className="text-gray-800 text-sm sm:text-base mb-6 leading-relaxed">
+            </Text>
+            <Text variant="tex1" className="text-gray-800  mb-6 leading-relaxed">
               At You Only Younger, we are steadfast in our mission to empower
               your unique beauty, health, and healing journey. We extend
               dedicated tools and guidance, inspiring transformative beauty and
@@ -37,7 +38,7 @@ const VisualFramewrok2 = () => {
               commitment to your beauty, health, and healing, our approach
               addresses your physical and emotional aspects, with consciousness
               being the foundation—unlocking the gates to optimal wellness.
-            </p>
+            </Text>
             <button className="bg-[#400186] text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-purple-800 transition text-sm sm:text-base">
               Book an appointment!
             </button>
@@ -48,7 +49,7 @@ const VisualFramewrok2 = () => {
             <img
               src="./34.png"
               alt="Visual Framework"
-              className="rounded-2xl shadow-lg w-full max-w-md md:max-w-full h-auto"
+              className="rounded-2xl shadow-lg w-full max-w-md md:max-w-96 lg:h-auto md:h-80"
             />
           </div>
         </div>
@@ -58,14 +59,14 @@ const VisualFramewrok2 = () => {
           {cards.map((card, index) => (
             <div
               key={index}
-              className="bg-white border text-gray-800 p-6 rounded-xl shadow-md"
+              className="bg-white border text-center lg:text-left text-gray-800 p-6 rounded-xl shadow-md"
             >
-              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+              <Text variant="text4" className=" font-semibold mb-2">
                 {card.title}
-              </h3>
-              <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+              </Text>
+              <Text variant="text1" className="text-gray-600 leading-relaxed">
                 {card.desc}
-              </p>
+              </Text>
             </div>
           ))}
         </div>

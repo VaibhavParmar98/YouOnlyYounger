@@ -12,7 +12,7 @@ const Headline = () => {
             {[...Array(10)].map((_, i) => (
               <span
                 key={i}
-                className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-8xl 4xl:text-9xl mr-4 sm:mr-6 md:mr-8 lg:mr-10"
+                className="text-[60px] md:text-[64px] lg:text-[72px] mr-4 sm:mr-6 md:mr-8 lg:mr-10"
               >
                 {text}
               </span>

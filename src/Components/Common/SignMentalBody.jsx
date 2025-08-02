@@ -1,52 +1,52 @@
-import React from 'react'
-import { TbCircleCheckFilled } from 'react-icons/tb'
+import React from "react";
+import { TbCircleCheckFilled } from "react-icons/tb";
+import Text from "../Common/Text";
+import Button from "../Common/Button";
 
 const SignMentalBody = () => {
   return (
-    <div className="py-10 bg-[#F6F6F6]">
-      <div className="max-w-7xl w-full mx-auto lg:flex-row flex flex-col p-6 md:p-0 items-center justify-center gap-10">
-        <img src="./76.png" alt="" className="xl:w-auto xl:h-auto  h-64 lg:w-1/2 w-full lg:ml-6 ml-0 xl:ml-0" />
-        <div className="flex flex-col gap-3 lg:w-1/2 w-full">
-          <h1 className="text-4xl font-marcellous">
+    <div className="py-10 lg:py-20 bg-[#F6F6F6]">
+      <div className="max-w-7xl mx-auto lg:flex-row flex flex-col p-6 md:p-0 items-center justify-center gap-10">
+        <img src="./76.png" alt="" className="xl:w-auto xl:h-auto w-80 h-64"/>
+        <div className="flex flex-col gap-3">
+          <Text variant="text5" className=" font-marcellous">
             Signs Your Mental Body Needs Support
-          </h1>
-          <p className="flex items-center gap-3 text-xl">
+          </Text>
+          <Text variant="text1" className="flex items-center gap-3 ">
             <span>
               <TbCircleCheckFilled className="text-[#400186] " />
             </span>
-            Constant overthinking or mental chatter{" "}
-          </p>
-          <p className="flex items-center gap-3 text-xl">
+            Constant overthinking or mental chatter
+          </Text>
+          <Text variant="text1" className="flex items-center gap-3 ">
             <span>
               <TbCircleCheckFilled className="text-[#400186] " />
             </span>
-            Poor focus or memory lapses{" "}
-          </p>
-          <p className="flex items-center gap-3 text-xl">
+            Poor focus or memory lapses
+          </Text>
+          <Text variant="text1" className="flex items-center gap-3 ">
             <span>
               <TbCircleCheckFilled className="text-[#400186] " />
             </span>
-            Anxiety, worry, or irritability{" "}
-          </p>
-          <p className="flex items-center gap-3 text-xl">
+            Anxiety, worry, or irritability
+          </Text>
+          <Text variant="text1" className="flex items-center gap-3 ">
             <span>
               <TbCircleCheckFilled className="text-[#400186] " />
             </span>
-            Trouble sleeping due to racing thoughts{" "}
-          </p>
-          <p className="flex items-center gap-3 text-xl">
+            Trouble sleeping due to racing thoughts
+          </Text>
+          <Text variant="text1" className="flex items-center gap-3 ">
             <span>
               <TbCircleCheckFilled className="text-[#400186] " />
             </span>
-            Feeling mentally “stuck” or indecisive{" "}
-          </p>{" "}
-          <button className="w-fit px-6 mt-3 xl:text-xl py-3 text-white bg-[#400186] rounded-full hover:bg-[#310066] transition">
-            Book an appointment
-          </button>
+            Feeling mentally “stuck” or indecisive
+          </Text>
+          <Button className="w-52 self-center lg:self-start">Book Appointment</Button>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SignMentalBody
+export default SignMentalBody;

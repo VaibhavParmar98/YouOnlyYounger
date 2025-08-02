@@ -1,9 +1,10 @@
 import React from "react";
 import { FaCircleChevronRight } from "react-icons/fa6";
+import Text from "../Common/Text";
 
 const LicensesAndCertifications = () => {
   return (
-    <div className="bg-[#F6F6F6] py-10 font-inter">
+    <div className="bg-[#F6F6F6] py-10 lg:py-20 font-inter">
       <div className="max-w-7xl mx-auto md:p-3">
         <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-6 p-3 relative">
           {/* Image */}
@@ -23,10 +24,10 @@ const LicensesAndCertifications = () => {
 
           {/* Licenses Section */}
           <div className="relative border p-5 border-dashed border-[#400186] rounded-lg  bg-white text-gray-700 z-10">
-            <h1 className="text-xl font-semibold mb-4 text-[#400186] font-marcellous">
+            <Text variant="text4" className=" font-semibold mb-4 text-[#400186] font-marcellous">
               Licenses and Certifications
-            </h1>
-            <ul className="space-y-3 text-sm">
+            </Text>
+            <ul className="space-y-3 text-[12px] md:text-[14px] lg:text-[16px]">
               {[
                 "Board Certified — Integrative Medicine Doctor — IMD",
                 "Board Certified — Doctor of Integrative Medicine — BCDIM",
@@ -49,10 +50,10 @@ const LicensesAndCertifications = () => {
 
           {/* Professional Organizations Section */}
           <div className="border p-5 border-dashed border-[#400186] rounded-lg bg-white text-gray-700 z-10">
-            <h1 className="text-xl font-semibold mb-4 text-[#400186] font-marcellous">
+            <Text variant="text4" className=" font-semibold mb-4 text-[#400186] font-marcellous">
               Professional Organizations
-            </h1>
-            <ul className="space-y-3 text-sm">
+            </Text>
+            <ul className="space-y-3 text-[12px] md:text-[14px] lg:text-[16px]">
               {[
                 "BOIM — Board of Integrative Medicine",
                 "ANMA — American Naturopathic Medical Association",

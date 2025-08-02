@@ -1,12 +1,14 @@
 import React from "react";
 import { Mail } from "lucide-react";
+import Text from "../Common/Text";
+import Button from "../Common/Button";
 
 const ContactSection = () => {
   return (
-    <section className="bg-purple-50 py-16 px-4 font-inter">
-      <h2 className="text-3xl font-semibold text-center mb-6 font-marcellous">
+    <section className="bg-purple-50 py-10 lg:py-20 px-4 font-inter">
+      <Text variant="text2" className="text-center mb-6 font-marcellous">
         Let’s Talk
-      </h2>
+      </Text>
       <div className=" max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-10">
         {/* Left: Map Embed */}
         <div className="md:w-1/2 w-full">
@@ -41,21 +43,16 @@ const ContactSection = () => {
             ></textarea>
 
             <div className="flex justify-between">
-              <button
-                type="submit"
-                className="lg:p-3 p-0.5 lg:w-44 w-32 lg:h-auto h-12 bg-[#400186] text-white rounded-full transition"
-              >
-                Submit
-              </button>
+             <Button className="w-44">Submit</Button>
               <div className="flex items-center gap-3 lg:mt-6">
                 <div className="bg-purple-200 text-[#400186] lg:p-2 p-0.5 rounded-full">
                   <Mail size={18} />
                 </div>
                 <div>
-                  <p className="text-sm font-medium">Email</p>
-                  <p className="text-sm text-gray-700">
+                  <Text variant="text1" className="font-bold ">Email</Text>
+                  <Text variant="text1" className="font-bold text-gray-700">
                     Info@YouOnlyYounger.com
-                  </p>
+                  </Text>
                 </div>
               </div>
             </div>

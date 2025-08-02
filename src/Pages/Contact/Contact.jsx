@@ -1,7 +1,7 @@
-import ContactBanner from "../../Components/Contact/ContactBanner"
 import CallToActtionBanner from "../../Components/Common/CallToActtionBanner"
 import FandQ from "../../Components/Common/FandQ"
 import BookingSection from "../../Components/Contact/BookingSection"
+import ContactBanner from "../../Components/Contact/ContactBanner"
 import ContactSection from "../../Components/Contact/ContactSection"
 
 
