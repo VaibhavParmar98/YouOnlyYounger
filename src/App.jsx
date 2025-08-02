@@ -2,7 +2,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Header1 from './Components/Common/Header1'
 import Header2 from './Components/Common/Header2'
 import Home from './Pages/Home/Home'
-import ProfilePage from './Pages/Profile/ProfilePage'
+// import ProfilePage from './Pages/Profile/ProfilePage'
 import About from './Pages/About/About'
 import PhysicalBody from './Pages/PhysicalBody/PhysicalBody'
 import Contact from './Pages/Contact/Contact'
@@ -21,7 +21,7 @@ const App = () => {
       <Header2/>
         <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path='/profile' element={<ProfilePage/>} />
+          {/* <Route path='/profile' element={<ProfilePage/>} /> */}
           <Route path='/about' element={<About/>} />
            <Route path='/healing' element={<PhysicalBody/>} />
            <Route path='/vital-body' element={<VitalBody/>} />

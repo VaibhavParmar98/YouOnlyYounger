@@ -1,26 +1,39 @@
 import React from 'react'
-import Banner from '../../Components/Banner'
-// import InterSection from '../Components/InterSection'
-// import Headline from '../Components/Headline'
-// import Gallery from '../Components/Gallery'
-// import ClientReview from '../Components/ClientReview'
-// import FandQ from '../Components/FandQ'
-// import Consultation from '../Components/Consultation'
-// import CallToActtionBanner from '../Components/CallToActtionBanner'
-// import DeepHealing from '../Components/DeepHealing'
+
+import ProfileDetails from '../../Components/Profile/ProfileDetails'
+import Categories from '../../Components/Profile/Categories'
+import VisualFramework from '../../Components/Profile/VisualFramework'
+import IntegrativeHealing from '../../Components/Profile/IntegrativeHealing '
+import InterSection from '../../Components/Common/InterSection'
+import Headline from '../../Components/Common/Headline'
+import HealthServices from '../../Components/Profile/HealthServices '
+import Gallery from '../../Components/Common/Gallery'
+import AboutOurMethod from '../../Components/Profile/AboutOurMethod '
+import ClientReview from '../../Components/Common/ClientReview'
+import FandQ from '../../Components/Common/FandQ'
+import CallToActtionBanner from '../../Components/Common/CallToActtionBanner'
+
+import Carousel from '../../Components/Banner/Carousel'
+
+
 
 const Home = () => {
   return (
-    <div>
-      <Banner/>
-      {/* <Headline/>
-      <InterSection/>
-      <ClientReview/>
-      <Consultation/>
-      <CallToActtionBanner/>
-      <DeepHealing/>
-      <FandQ/>
-      <Gallery/> */}
+    <div className='bg-[#F6F6F6]'>
+      <Carousel/>
+  
+            <ProfileDetails/>
+            <Categories/>
+            <VisualFramework/>
+            <IntegrativeHealing/>
+            <InterSection/>
+            <Headline/>
+            <HealthServices/>
+            <Gallery/>
+            <AboutOurMethod/>
+            <ClientReview/>
+            <FandQ/>
+            <CallToActtionBanner/>
     </div>
   )
 }

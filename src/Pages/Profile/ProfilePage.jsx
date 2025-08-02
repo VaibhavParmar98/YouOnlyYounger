@@ -1,5 +1,5 @@
 import React from 'react'
-import Profile from '../../Components/Profile/Profile'
+import Profile from '../../Components/Banner/Profile'
 import ProfileDetails from '../../Components/Profile/ProfileDetails'
 import Categories from '../../Components/Profile/Categories'
 import VisualFramework from '../../Components/Profile/VisualFramework'
