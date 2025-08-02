@@ -19,9 +19,10 @@ import Carousel from '../../Components/Banner/Carousel'
 
 const Home = () => {
   return (
-    <div className='bg-[#F6F6F6]'>
+    <div >
+       <div className='bg-[#F6F6F6]'>
       <Carousel/>
-  
+  </div>
             <ProfileDetails/>
             <Categories/>
             <VisualFramework/>
