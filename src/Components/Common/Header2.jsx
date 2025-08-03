@@ -28,8 +28,8 @@ import { NavLink } from "react-router-dom";
                 <NavLink to="/contact" className="hover:underline text-sm xl:text-base 2xl:text-lg">Career</NavLink>
               </div>
               <div className="hidden lg:flex gap-2 xl:gap-4">
-                <button className="p-3 bg-black text-white rounded-full cursor-pointer text-xs xl:text-sm 2xl:text-base">Book Appointment</button>
-                <button className="p-2 hover:underline border rounded-full cursor-pointer text-xs xl:text-sm 2xl:text-base">Contact Us</button>
+                <button className="p-3 bg-black xl:w-44 w-36 text-white rounded-full cursor-pointer text-xs xl:text-sm 2xl:text-base">Book Appointment</button>
+                <button className="p-2 hover:underline  border rounded-full cursor-pointer text-xs xl:text-sm 2xl:text-base">Contact Us</button>
               </div>
               <div className="lg:hidden">
                 <button onClick={toggleMenu} className="text-black focus:outline-none">

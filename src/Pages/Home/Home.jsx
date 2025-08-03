@@ -14,15 +14,14 @@ import FandQ from '../../Components/Common/FandQ'
 import CallToActtionBanner from '../../Components/Common/CallToActtionBanner'
 
 import Carousel from '../../Components/Banner/Carousel'
+import Banner from '../../Components/Banner/Banner'
 
 
 
 const Home = () => {
   return (
     <div >
-       <div className='bg-[#F6F6F6]'>
-      <Carousel/>
-  </div>
+            <Banner/>
             <ProfileDetails/>
             <Categories/>
             <VisualFramework/>

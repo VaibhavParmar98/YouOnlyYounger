@@ -41,7 +41,7 @@ const HealthServices = () => {
             <img
               src={service.img}
               alt={service.title}
-              className="w-full h-56 object-cover p-2"
+              className="w-full h-56 object-cover "
             />
             {/* Tag */}
             <Text variant="text1" className="bg-purple-100 text-purple-900  font-semibold uppercase text-center py-2">

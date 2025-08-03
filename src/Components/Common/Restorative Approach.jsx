@@ -7,7 +7,7 @@ import Text from "./Text";
 
 const RestorativeApproach = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-10 lg:py-20 ">
+    <div className="max-w-7xl mx-auto px-4 py-10 lg:pt-10 lg:pb-20 ">
       {/* Heading Section */}
       <div className="flex flex-col gap-4 items-center text-center mb-10">
         <img src="./32.png" alt="" className="w-20 h-20 object-contain" />
@@ -23,8 +23,8 @@ const RestorativeApproach = () => {
       {/* Grid Section */}
       <div className="flex flex-wrap justify-center gap-6">
         {/* Card 1 */}
-        <div className="bg-[#EFECFD] p-5 rounded-lg flex flex-col gap-3 w-[400px] h-[230px]">
-          <BsShieldFillPlus size={40} className="text-white bg-[#7355EC] p-1.5 rounded" />
+        <div className="bg-[#EFECFD] p-5 rounded-lg  flex flex-col gap-2 w-[400px] h-[230px]">
+          <BsShieldFillPlus size={40} className="text-white bg-[#7355EC]  p-1.5  rounded" />
           <Text variant="text3" className="font-bold ">Comprehensive Health Assessment</Text >
           <Text variant="text3" >
             We begin with a detailed intake, reviewing your symptoms, history, lifestyle, and goals to understand the
@@ -33,7 +33,7 @@ const RestorativeApproach = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="bg-[#FFF2E0] p-5 rounded-lg flex flex-col gap-3 w-[400px] h-[230px]">
+        <div className="bg-[#FFF2E0] p-5 rounded-lg flex flex-col gap-2 w-[400px] h-[230px]">
           <MdAutoGraph size={40} className="text-white bg-[#FFCC78] p-1.5 rounded" />
           <Text variant="text3" className="font-bold ">Functional Diagnostics & Lab Testing</Text  >
           <Text variant="text3" >
@@ -43,7 +43,7 @@ const RestorativeApproach = () => {
         </div>
 
         {/* Card 3 */}
-        <div className="bg-[#F0F8FF] p-5 rounded-lg flex flex-col gap-3 w-[400px] h-[230px]">
+        <div className="bg-[#F0F8FF] p-5 rounded-lg flex flex-col gap-2 w-[400px] h-[230px]">
           <LuGitGraph size={40} className="text-white bg-[#66C7FF] p-1.5 rounded" />
           <Text variant="text3" className="font-bold ">Personalized Treatment Planning</Text >
           <Text variant="text3" >
@@ -53,7 +53,7 @@ const RestorativeApproach = () => {
         </div>
 
         {/* Card 4 */}
-        <div className="bg-[#EAF7F2] p-5 rounded-lg flex flex-col gap-3 w-[400px] h-[230px]">
+        <div className="bg-[#EAF7F2] p-5 rounded-lg flex flex-col gap-2 w-[400px] h-[230px]">
           <BsJournalPlus size={40} className="text-white bg-[#28B078] p-1.5 rounded" />
           <Text variant="text3" className="font-bold ">Targeted Therapeutic Interventions</Text  >
           <Text variant="text3" >
@@ -63,7 +63,7 @@ const RestorativeApproach = () => {
         </div>
 
         {/* Card 5 */}
-        <div className="bg-[#FEE4D9] p-5 rounded-lg flex flex-col gap-3 w-[400px] h-[230px]">
+        <div className="bg-[#FEE4D9] p-5 rounded-lg flex flex-col gap-2 w-[400px] h-[230px]">
           <SlSettings size={40} className="text-white bg-[#F4877A] p-1.5 rounded" />
           <Text variant="text3" className="font-bold ">Ongoing Monitoring & Optimization</Text >
           <Text variant="text3" >

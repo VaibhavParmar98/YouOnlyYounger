@@ -34,7 +34,7 @@ const AboutBanner = () => {
    <div className="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-10 w-full">
       
       {/* Left Card */}
-      <div className="text-center flex flex-col gap-3 bg-gray-200 p-5 rounded-xl w-full lg:w-1/2 h-full">
+      <div className="text-center flex flex-col gap-3 xl:h-64 bg-gray-200 p-5 rounded-xl w-full lg:w-1/2 h-full">
         <p className="lg:text-[25px] md:text-[20px] text-[16px] font-bold">Welcome to You Only Younger</p>
         <span className="lg:text-[16px] md:text-[14px] text-[12px] text-gray-700">
           Embark on a journey towards your most radiant self at You Only Younger, nestled in the heart of Sugar Land, Texas. Headed by the eminent Dr. Kami Owen, a double board-certified Integrative Medicine Doctor with over two decades in emergency medicine, our clinic shines as a beacon of holistic health and transformative healing. Our rich tapestry of services weaves together the potent threads of both quantum and integrative medicine, creating a seamless path to well-being that transcends the physical realm.
@@ -42,7 +42,7 @@ const AboutBanner = () => {
       </div>
 
       {/* Right Card */}
-      <div className="text-center flex flex-col gap-3 bg-gray-200 p-5 rounded-xl w-full lg:w-1/2 h-full">
+      <div className="text-center flex flex-col gap-3 xl:h-64 bg-gray-200 p-5 rounded-xl w-full lg:w-1/2 h-full">
         <p className="lg:text-[25px] md:text-[20px] text-[16px] font-bold">Mission: Empowering Your Unique Journey</p>
         <span className="lg:text-[16px] md:text-[14px] text-[12px]  text-gray-700">
           At You Only Younger, we are steadfast in our mission to empower your unique beauty, health, and healing journey. We extend dedicated tools and guidance, inspiring transformative beauty and well-being in every facet of your life. With an unwavering commitment to your beauty, health, and healing, our approach addresses your physical and emotional aspects, with consciousness being the foundation, unlocking the gates to optimal wellness.

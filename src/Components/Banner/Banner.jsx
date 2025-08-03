@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "../Common/Button";
 
 const Banner = () => {
@@ -30,16 +29,12 @@ const Banner = () => {
             aligning Physical, Vital, Mental, Supermental, and Bliss bodies.
           </p>
           <div className="flex items-center md:justify-start justify-center mt-5 gap-6">
-            <Button variant="black">Book Appointment</Button>
+            <Button variant="black" className="w-48">Book Appointment</Button>
             <button className="lg:text-[16px] md:text-[14px] text-[12px]">
               Contact Us
             </button>
           </div>
-          <div className="flex items-center gap-4 mt-3 ml-6">
-            <img src="./70.png" alt="" className="hover:cursor-pointer" />
-            <img src="./71.png" alt="" className="hover:cursor-pointer" />
-            <img src="./71.png" alt="" className="hover:cursor-pointer" />
-          </div>
+          
         </div>
 
         <div className="md:w-1/2 w-full md:ml-10 ml-0 relative">

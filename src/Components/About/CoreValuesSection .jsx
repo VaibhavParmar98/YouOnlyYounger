@@ -35,27 +35,27 @@ const CoreValuesSection = () => {
        <img
         src="./31.png"
         alt="Side Decoration"
-        className=" absolute 2xl:left-40 2xl:top-44 xl:right-2 xl:bottom-0 lg:right-2 lg:bottom-0 right-2 bottom-0 md:-right-10 md:bottom-0 lg:w-64 lg:h-64 md:w-20 md:h-44"
+        className=" absolute 2xl:left-10 2xl:top-44 xl:right-2 xl:bottom-0 lg:right-2 lg:bottom-0 right-2 bottom-0 md:-right-10 md:bottom-0 lg:w-64 lg:h-64 md:w-20 md:h-44"
       />
 
       <section className="max-w-7xl mx-auto w-full relative z-10">
-        <div className="flex flex-col lg:flex-row items-stretch gap-8">
+        <div className="flex flex-col xl:flex-row items-stretch gap-8">
           {/* Left Image */}
-          <div className="w-full lg:w-1/2">
+          <div className="w-full xl:w-1/2 flex items-center justify-center">
             <img
               src="./33.png"
               alt="Core Values"
-              className="rounded-2xl w-full h-full object-cover"
+              className="rounded-2xl xl:w-full lg:h-full object-cover lg:w-[500px] md:w-[400px] md:mt-10 lg:mt-0 mt-0 self-center"
             />
           </div>
 
           {/* Right Content */}
-          <div className="w-full lg:w-1/2 text-center lg:text-left flex flex-col justify-between">
+          <div className="w-full xl:w-1/2 text-center lg:text-left flex flex-col justify-between">
             <div>
-              <Text variant="text5" className=" font-marcellous">
+              <Text variant="text5" className=" font-marcellous text-center xl:text-start">
                 Our Core Values:
               </Text>
-              <Text variant="text1">
+              <Text variant="text1" className="text-center xl:text-start">
                 We are rooted in purpose and integrity, guided by compassion,
                 trust, and mindfulness to deliver holistic care with lasting
                 impact and intention.
@@ -79,7 +79,7 @@ const CoreValuesSection = () => {
 
             {/* Button */}
             <div className="mt-6">
-             <Button>Contact Us</Button>
+             <Button className="w-36 self-center xl:self-start items-center md:mb-10 lg:mb-0 mt-0">Contact Us</Button>
             </div>
           </div>
         </div>

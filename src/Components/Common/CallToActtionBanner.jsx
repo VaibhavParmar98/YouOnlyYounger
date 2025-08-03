@@ -32,7 +32,7 @@ const CallToActtionBanner = () => {
           and true alignment from within.
         </Text>
 
-       <Button className='text-[18px]' variant='colourWhite'>Book Appointment</Button>
+       <Button className='text-[18px] w-48' variant='colourWhite'>Book Appointment</Button>
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import FandQ from "../../Components/Common/FandQ"
 import BookingSection from "../../Components/Contact/BookingSection"
 import ContactBanner from "../../Components/Contact/ContactBanner"
 import ContactSection from "../../Components/Contact/ContactSection"
+import OurMission from "../../Components/Contact/OurMission"
 
 
 const Contact = () => {
@@ -10,6 +11,7 @@ const Contact = () => {
     <div>
       <ContactBanner/>
       <BookingSection/>
+      <OurMission/>
       <ContactSection/>
       <FandQ/>
       <CallToActtionBanner/>

@@ -3,7 +3,7 @@ import Text from "./Text";
 
 const Consultation = () => {
   return (
-    <div className="relative w-full h-[55vh]  md:h-[55vh] lg:h-[55vh]">
+    <div className="relative w-full h-[55vh]  md:h-[55vh] lg:h-[60vh]">
       <img
         src="./19.png"
         alt="intro section"
@@ -26,7 +26,7 @@ const Consultation = () => {
           vitality,
           and true alignment from within.
         </Text>
-          <Button variant="colourWhite" ></Button>
+          <Button variant="colourWhite" className="w-52">Book an appointment</Button>
       </div>
     </div>
   );

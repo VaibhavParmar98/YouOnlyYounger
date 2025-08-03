@@ -10,7 +10,7 @@ const Therapies = () => {
             <Text variant="text5" className=" mt-10 text-white font-marcellous ">Therapies to Rebalance the Vital Body</Text>
           <div className="lg:flex-row text-center lg:text-left flex flex-col  items-center gap-6">
             <div className="flex flex-col gap-3 bg-white rounded-2xl p-3">
-            <img src="./01.png" alt="" className="w-10 h-10" />{" "}
+           <Text variant="text5" className="font-bold">01</Text>{" "}
             <Text variant="text3" className="font-semibold ">
               Energy Healing & Acupuncture
             </Text>{" "}
@@ -22,8 +22,7 @@ const Therapies = () => {
             </Text>
           </div>
           <div className="flex flex-col gap-3 bg-white rounded-2xl p-3">
-            <img src="./02.png" alt="" className="w-10 h-10" />{" "}
-            <Text variant="text3" className="font-semibold ">IV Nutrient Therapy</Text>{" "}
+<Text variant="text5" className="font-bold">02</Text>            <Text variant="text3" className="font-semibold ">IV Nutrient Therapy</Text>{" "}
             <Text variant="text1">
               IV Nutrient Therapy delivers essential vitamins and minerals
               directly to your cells, boosting energy, enhancing immunity,
@@ -32,8 +31,7 @@ const Therapies = () => {
             </Text>
           </div>
           <div className="flex flex-col gap-3 bg-white rounded-2xl p-3">
-            <img src="./03.png" alt="" className="w-10 h-10" />{" "}
-            <Text variant="text3" className="font-semibold ">
+<Text variant="text5" className="font-bold">03</Text>            <Text variant="text3" className="font-semibold ">
               Lymphatic Drainage Massage
             </Text>{" "}
             <Text variant="text1">

@@ -51,7 +51,7 @@ const Footer = () => {
               <div className="flex flex-col sm:flex-row gap-10 w-full">
                 {/* Let’s Chat */}
                 <div className="flex flex-col gap-4 md:w-1/2 w-full">
-                  <Text variant="text4" className=" font-marcellous text-center mlg:text-start">Let’s Chat</Text>
+                  <Text variant="text4" className=" font-marcellous text-center lg:text-start">Let’s Chat</Text>
                   <Text variant="text1" className="flex items-center gap-2 justify-center lg:items-start lg:justify-start">
                     <Phone size={16} className="text-center md:text-start"/>
                     <span className="text-center md:text-start">+1 (346) 746-6759</span>
@@ -84,18 +84,18 @@ const Footer = () => {
               {/* URLs */}
               <div className="flex flex-col gap-3 mt-6 md:mt-0">
                 <Text variant="text4" className=" font-marcellous text-center lg:text-start">URLs</Text>
-                <div className="grid  grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 text-sm sm:text-base">
-                  <Text variant="text1" className="text-center lg:items-start">About</Text>
-                  <Text variant="text1" className="text-center lg:items-start">Med spa</Text>
-                  <Text variant="text1" className="text-center lg:items-start">Health</Text>
-                  <Text variant="text1" className="text-center lg:items-start">Healing</Text>
-                  <Text variant="text1" className="text-center lg:items-start">Gallery</Text>
-                  <Text variant="text1" className="text-center lg:items-start">Contact</Text>
-                  <Text variant="text1" className="text-center lg:items-start">Blog</Text>
-                  <Text variant="text1" className="text-center lg:items-start">FAQ’s</Text>
-                  <Text variant="text1" className="text-center lg:items-start">Privacy Policy</Text>
-                  <Text variant="text1" className="text-center lg:items-start">Conditions</Text>
-                  <Text variant="text1" className="text-center lg:items-start">Careers</Text>
+                <div className="grid  grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 ">
+                  <Text variant="text1" className="text-center lg:text-start">About</Text>
+                  <Text variant="text1" className="text-center lg:text-start">Med spa</Text>
+                  <Text variant="text1" className="text-center lg:text-start">Health</Text>
+                  <Text variant="text1" className="text-center lg:text-start">Healing</Text>
+                  <Text variant="text1" className="text-center lg:text-start">Gallery</Text>
+                  <Text variant="text1" className="text-center lg:text-start">Contact</Text>
+                  <Text variant="text1" className="text-center lg:text-start">Blog</Text>
+                  <Text variant="text1" className="text-center lg:text-start">FAQ’s</Text>
+                  <Text variant="text1" className="text-center lg:text-start">Privacy Policy</Text>
+                  <Text variant="text1" className="text-center lg:text-start">Conditions</Text>
+                  <Text variant="text1" className="text-center lg:text-start">Careers</Text>
                 </div>
               </div>
             </div>

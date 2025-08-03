@@ -10,7 +10,7 @@ const Profile = () => {
         <img
           src="./22.png"
           alt="Profile"
-          className="w-full max-w-4xl mx-auto h-full object-cover rounded-2xl max-h-[400px]"
+          className="w-full 2xl:max-w-7xl 2xl:max-h-[630px] max-w-4xl mx-auto h-full object-cover rounded-2xl max-h-[400px]"
         />
 
         {/* Overlay */}

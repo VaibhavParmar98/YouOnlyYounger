@@ -1,9 +1,8 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Marcellus&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
 
 @theme {
-  --font-marcellous : "Marcellus",serif;
+  --font-marcellous : "Marcellus SC",serif;
 }
 
 body {
@@ -24,7 +23,7 @@ body {
 
 .ticker__content {
   display: inline-block;
-  animation: scroll 30s linear infinite;
+  animation: scroll 50s linear infinite;
 }
 
 .ticker__content span {

@@ -8,6 +8,8 @@ import {
 } from "react-icons/gi";
 import { useNavigate } from "react-router-dom";
 import Text from "../Common/Text";
+import { FaCheckCircle } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa6";
 
 const VisualFramework = () => {
   const navigate = useNavigate();
@@ -44,6 +46,9 @@ const VisualFramework = () => {
             The foundation of all health. This includes your muscles, bones,
             organs, and systems.
           </Text>
+          <span>
+            <FaArrowRight className="text-[#400186]"/>
+          </span>
         </div>
 
         {/* Card 2 */}
@@ -54,9 +59,12 @@ const VisualFramework = () => {
           <GiEnergyArrow size={60} className="text-[#400186]" />
           <Text variant="text4">Vital Body</Text>
           <Text variant="text1">
-            The body of energy and circulation. It drives digestion, immunity, and
-            vitality.
+            The body of energy and circulation. It drives digestion, immunity,
+            and vitality.
           </Text>
+          <span>
+            <FaArrowRight className="text-[#400186]"/>
+          </span>
         </div>
 
         {/* Card 3 */}
@@ -67,9 +75,12 @@ const VisualFramework = () => {
           <GiBrain size={60} className="text-[#400186]" />
           <Text variant="text4">Mental Body</Text>
           <Text variant="text1">
-            This body stores thoughts, beliefs, and mental patterns. It influences
-            stress and decision-making.
+            This body stores thoughts, beliefs, and mental patterns. It
+            influences stress and decision-making.
           </Text>
+          <span>
+            <FaArrowRight className="text-[#400186]"/>
+          </span>
         </div>
 
         {/* Card 4 */}
@@ -83,6 +94,9 @@ const VisualFramework = () => {
             The higher intelligence layer guiding clarity and direction. This is
             your internal compass.
           </Text>
+          <span>
+            <FaArrowRight className="text-[#400186]"/>
+          </span>
         </div>
 
         {/* Card 5 */}
@@ -95,6 +109,25 @@ const VisualFramework = () => {
           <Text variant="text1">
             The deepest level — the essence of peace and joy. It’s awakened when
             all other bodies are in balance.
+          </Text>
+          <span>
+            <FaArrowRight className="text-[#400186]"/>
+          </span>
+        </div>
+      </div>
+      <div>
+        <div className=" xl:flex-row flex flex-col items-center justify-center gap-6 mt-6">
+          <Text variant="text1" className="flex  items-center gap-2">
+            <FaCheckCircle className="text-[#400186]" />
+            Physical, Mental & Emotional Healing
+          </Text>
+          <Text variant="text1" className="flex  items-center gap-2">
+            <FaCheckCircle className="text-[#400186]" />
+            Personalized Treatments Based on Your Body Profile
+          </Text>
+          <Text variant="text1" className="flex  items-center gap-2">
+            <FaCheckCircle className="text-[#400186]" />
+            Faster Results with Integrative Medical Experts
           </Text>
         </div>
       </div>

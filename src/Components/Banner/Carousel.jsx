@@ -25,7 +25,7 @@ const Carousel = () => {
           <Banner />
         </div>
         <div>
-          <Profile />
+          {/* <Profile /> */}
         </div>
       </Slider>
     </div>

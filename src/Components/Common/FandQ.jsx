@@ -39,7 +39,7 @@ const FandQ = () => {
       <img
         src="./31.png"
         alt="Side Decoration"
-        className=" absolute 2xl:-left-80 2xl:top-44 lg:-left-60 lg:top-36 md:-left-30 md:top-56 lg:w-64 lg:h-64 md:w-44 md:h-44"
+        className=" absolute 2xl:-left-70 2xl:top-44 lg:-left-60 lg:top-36 md:-left-30 md:top-56 lg:w-64 lg:h-64 md:w-44 md:h-44"
       />
 
       <Text variant="text5" className=" text-center mb-10 font-marcellous">
@@ -50,11 +50,12 @@ const FandQ = () => {
         {questions.map((item, index) => (
           <div
             key={index}
-            className={`border rounded-xl p-4 transition-all duration-300 ${
+            className={`shadow-[0_0_5px_rgba(0,0,0,0.2)] rounded-xl p-4 transition-all duration-300 ${
               activeIndex === index
-                ? "border-[#400186] shadow-md"
+                ? "border-[#400186] shadow-md border"
                 : "bg-white"
-            }`}
+            }`
+          }
           >
             <div
               onClick={() => toggle(index)}

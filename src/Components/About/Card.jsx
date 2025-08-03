@@ -40,6 +40,7 @@ const cardData = [
 const Card = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 py-10 lg:py-20 font-inter">
+      <Text variant="text5" className="text-center font-marcellous mb-10">Your Care Team</Text>
       <ul className="flex flex-col gap-10">
         {cardData.map((card, index) => (
           <li
@@ -50,7 +51,7 @@ const Card = () => {
               className={`rounded-3xl shadow-lg  p-6 md:p-10 flex flex-col lg:flex-row gap-6 items-center ${card.bg} min-h-[100vh] md:min-h-0`}
             >
               <div className="flex-1 flex flex-col gap-3">
-                <Text variant="text5" className=" font-semibold font-marcellous">
+                <Text variant="text5" className="  font-marcellous">
                   {card.name}
                 </Text>
                 <Text variant="text4" className="text-[#400186] font-medium font-marcellous">{card.title}</Text>

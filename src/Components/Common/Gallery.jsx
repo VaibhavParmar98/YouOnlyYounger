@@ -42,7 +42,7 @@ const Gallery = () => {
         <Text variant='text5' className="  font-marcellous">
           Before & After Gallery
         </Text>
-        <Text variant='text1' className="2xl:text-3xl xl:text-xl lg:text-xl text-lg max-w-4xl mx-auto leading-relaxed font-inter">
+        <Text variant='text1' className=" max-w-4xl mx-auto leading-relaxed font-inter">
           See real transformations from our clients. These before and after photos showcase the
           visible results of our expert care and treatments.
         </Text>

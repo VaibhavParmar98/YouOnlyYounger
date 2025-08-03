@@ -39,7 +39,7 @@ const VisualFramewrok2 = () => {
               addresses your physical and emotional aspects, with consciousness
               being the foundation—unlocking the gates to optimal wellness.
             </Text>
-            <button className="bg-[#400186] text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-purple-800 transition text-sm sm:text-base">
+            <button className="bg-[#400186] text-white  px-6 py-3 rounded-full shadow hover:bg-purple-800 transition text-sm sm:text-base">
               Book an appointment!
             </button>
           </div>

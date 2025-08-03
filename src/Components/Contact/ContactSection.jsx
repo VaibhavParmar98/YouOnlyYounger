@@ -42,8 +42,8 @@ const ContactSection = () => {
               className="w-full border rounded-md px-4 py-2 bg-white"
             ></textarea>
 
-            <div className="flex justify-between">
-             <Button className="w-44">Submit</Button>
+            <div className="flex justify-between md:gap-6 lg:gap-0 gap-0">
+             <Button className="w-44 h-13">Submit</Button>
               <div className="flex items-center gap-3 lg:mt-6">
                 <div className="bg-purple-200 text-[#400186] lg:p-2 p-0.5 rounded-full">
                   <Mail size={18} />
