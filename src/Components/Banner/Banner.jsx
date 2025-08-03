@@ -21,7 +21,7 @@ const Banner = () => {
             Hi, I’m Dr. Kami Owen
           </p>
           <h1 className="lg:text-[50px] md:text-[30px]  text-[28px] font-marcellous">
-            Transform Every Layer of <br className="xl:block md:hidden" />
+            Transform Every Layer of <br className="2xl:block md:hidden" />
             <span className="text-[#400185]">Your Health</span>
           </h1>
           <p className="text-[#727272] lg:text-[18px] md:text-[14px] text-[14px]">
