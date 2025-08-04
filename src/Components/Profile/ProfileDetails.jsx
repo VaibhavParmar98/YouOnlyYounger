@@ -22,7 +22,7 @@ const ProfileDetails = () => {
 
         {/* Text Section */}
         <div className="w-full lg:w-1/2  text-center lg:text-start flex flex-col gap-3">
-          <Text variant="text5" className="  font-marcellous">
+          <Text variant="text5" className="  marcellus-text leading-tight" style={{ fontFamily: 'Marcellus' }}>
             Welcome to our <br /> Integrative Medicine Center
           </Text>
           <Text variant="text1" className=" ">
@@ -43,8 +43,12 @@ const ProfileDetails = () => {
             foster natural healing and address the root cause of your physical
             and emotional concerns.
           </Text>
-         <Button className="w-40 xl:mt-8 mt-3 self-center lg:self-start">About Me</Button>
-        </div>
+  <Button className="relative w-44 self-center mt-4 lg:self-start cursor-pointer overflow-hidden group text-black border border-black">
+    <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
+      About Me
+    </span>
+    <span className="absolute left-0 top-0 h-full w-0 bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+  </Button>        </div>
       </div>
     </div>
   );

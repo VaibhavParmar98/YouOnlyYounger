@@ -10,6 +10,7 @@ import Gallery from '../../Components/Common/Gallery'
 import ClientReview from '../../Components/Common/ClientReview'
 import FandQ from '../../Components/Common/FandQ'
 import DeepHealing from '../../Components/Common/DeepHealing'
+import StrengthVitalBody from '../../Components/Common/StrengthVitalBody'
 
 const SuperMentalBody = () => {
   return (
@@ -18,7 +19,7 @@ const SuperMentalBody = () => {
       <WisdomSuperMentalBody/>
       <ImbalanceSignsSection/>
       <Therapies/>
-      <RestorativeApproach/>
+      <StrengthVitalBody/>
       <SignMentalBody/>
       <InterSection/>
       <Gallery/>

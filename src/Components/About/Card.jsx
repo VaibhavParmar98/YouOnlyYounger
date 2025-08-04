@@ -40,7 +40,7 @@ const cardData = [
 const Card = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 py-10 lg:py-20 font-inter">
-      <Text variant="text5" className="text-center font-marcellous mb-10">Your Care Team</Text>
+      <Text variant="text5" className="text-center marcellus-text leading-tight mb-10">Your Care Team</Text>
       <ul className="flex flex-col gap-10">
         {cardData.map((card, index) => (
           <li
@@ -51,10 +51,10 @@ const Card = () => {
               className={`rounded-3xl shadow-lg  p-6 md:p-10 flex flex-col lg:flex-row gap-6 items-center ${card.bg} min-h-[100vh] md:min-h-0`}
             >
               <div className="flex-1 flex flex-col gap-3">
-                <Text variant="text5" className="  font-marcellous">
+                <Text variant="text5" className="  marcellus-text leading-tight">
                   {card.name}
                 </Text>
-                <Text variant="text4" className="text-[#400186] font-medium font-marcellous">{card.title}</Text>
+                <Text variant="text4" className="text-[#400186] font-medium marcellus-text leading-tight">{card.title}</Text>
                 <Text variant="text1" className="font-bold">{card.position}</Text>
                 <Text variant="text1" className="text-sm">
                   Katie’s career in healthcare began in 2007 as an RN in the

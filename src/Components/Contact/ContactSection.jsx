@@ -6,7 +6,7 @@ import Button from "../Common/Button";
 const ContactSection = () => {
   return (
     <section className="bg-purple-50 py-10 lg:py-20 px-4 font-inter">
-      <Text variant="text2" className="text-center mb-6 font-marcellous">
+      <Text variant="text2" className="text-center mb-6 marcellus-text leading-tight">
         Let’s Talk
       </Text>
       <div className=" max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-10">

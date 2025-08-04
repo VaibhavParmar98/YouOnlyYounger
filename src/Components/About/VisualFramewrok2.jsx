@@ -1,5 +1,6 @@
 import React from "react";
 import Text from "../Common/Text";
+import Button from "../Common/Button";
 
 const VisualFramewrok2 = () => {
   const cards = [
@@ -24,10 +25,10 @@ const VisualFramewrok2 = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Text content */}
           <div className="text-center lg:text-left">
-            <Text variant="text5" className=" text-black font-marcellous">
+            <Text variant="text5" className=" text-black marcellus-text leading-tight">
               The Five Bodies Visual Framework
             </Text>
-            <Text variant="text4" className="text-[#400186] mt-2  mb-4 font-marcellous">
+            <Text variant="text4" className="text-[#400186] mt-2  mb-4 marcellus-text leading-tight">
               Quantum Integrative Medicine
             </Text>
             <Text variant="tex1" className="text-gray-800  mb-6 leading-relaxed">
@@ -39,17 +40,20 @@ const VisualFramewrok2 = () => {
               addresses your physical and emotional aspects, with consciousness
               being the foundation—unlocking the gates to optimal wellness.
             </Text>
-            <button className="bg-[#400186] text-white  px-6 py-3 rounded-full shadow hover:bg-purple-800 transition text-sm sm:text-base">
-              Book an appointment!
-            </button>
+            <Button className="relative w-44 self-center lg:self-start cursor-pointer overflow-hidden group text-black border border-black">
+  <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
+   Book Appointment
+  </span>
+  <span className="absolute left-0 top-0 h-full w-0 bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+</Button> 
           </div>
 
           {/* Image */}
-          <div className="flex justify-center">
+          <div className="flex justify-end">
             <img
               src="./34.png"
               alt="Visual Framework"
-              className="rounded-2xl shadow-lg w-full max-w-md md:max-w-96 lg:h-auto md:h-80"
+              className="rounded-2xl  w-full max-w-md md:max-w-[480px] lg:h-auto md:h-80"
             />
           </div>
         </div>

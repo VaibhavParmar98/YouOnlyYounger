@@ -46,7 +46,7 @@ const HealingSection = () => {
         <div className="w-full lg:w-1/2 flex flex-col gap-4 text-center lg:text-start">
           <Text variant='text3' className="
          font-medium"><span className='bg-[#400186] py-0.5 px-1.5 mr-2'></span>Connection to Other Bodies</Text>
-          <Text variant='text5' className="text-2xl sm:text-3xl font-bold font-marcellous">
+          <Text variant='text5' className="text-2xl sm:text-3xl font-bold marcellus-text leading-tight">
             The Foundation for Whole-Body Healing
           </Text>
           <Text variant='text3' className="text-sm sm:text-base text-gray-700">
@@ -67,7 +67,12 @@ const HealingSection = () => {
             ))}
           </div>
 
-          <Button className='w-44 self-center lg:self-start'>About Us</Button>
+<Button className="relative w-44 self-center lg:self-start cursor-pointer overflow-hidden group text-black border border-black">
+  <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
+    About Us
+  </span>
+  <span className="absolute left-0 top-0 h-full w-0 bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+</Button>
         </div>
       </div>
     </section>

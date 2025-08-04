@@ -10,13 +10,13 @@ const BookingSection = () => {
   const [date, setDate] = useState(new Date());
 
   return (
-    <div className="max-w-7xl py-10 lg:py-20 2xl:mt-52 xl:mt-52 lg:mt-28 mx-auto px-4 font-inter">
+    <div className="max-w-7xl pb-10 lg:py-20 2xl:mt-10 xl:mt-10 mt-0 mx-auto px-4 font-inter">
       {/* TOP SECTION */}
       <section className="mt-20 py-10 flex flex-col lg:flex-row gap-10">
         {/* Left Column */}
         <div className="flex items-center justify-center lg:w-1/2">
           <div className="flex flex-col gap-4 text-center lg:text-left">
-            <Text variant="text2" className=" leading-tight font-marcellous">
+            <Text variant="text2" className=" leading-tight marcellus-text ">
               Let’s Explore What’s Possible
             </Text>
             <Text variant="text1" className="text-gray-600 text-base max-w-md mx-auto lg:mx-0">
@@ -95,7 +95,7 @@ const BookingSection = () => {
           <img src="./44.png" alt="Wellness" className="w-full h-auto" />
         </div>
         <div className="w-full md:w-1/2 flex flex-col gap-3 text-center md:text-left">
-          <Text variant="text2" className=" font-marcellous">
+          <Text variant="text2" className=" marcellus-text leading-tight">
             Start Your Wellness Journey Today
           </Text>
           <Text variant="text1">

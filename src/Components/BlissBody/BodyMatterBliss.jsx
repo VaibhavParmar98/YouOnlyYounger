@@ -8,7 +8,7 @@ const BodyMatterBliss = () => {
    <div className='py-10 lg:py-20'>
              <div className="py-10 xl:mt-40 lg:mt-20 mt-20">
                 <div className=' flex flex-col gap-6 text-center max-w-7xl mx-auto mb-20'>
-                       <Text variant='text5' className="  font-marcellous">The Bliss Body</Text>
+                       <Text variant='text5' className="  marcellus-text leading-tight">The Bliss Body</Text>
                        <Text variant='text1' >The Bliss Body represents the deepest and most subtle layer of our being. It is the realm of pure consciousness, inner joy, and connection to the universal source energy. Unlike the other bodies, which function through thoughts, emotions, and physical sensations, the Bliss Body exists beyond duality. It is our true essence — the silent witness that is untouched by stress, pain, or worldly struggles.</Text>
                        <Text variant='' >When you connect with this layer, healing becomes profound and lasting, as it flows directly from the source of life itself.</Text>
                    </div>
@@ -25,7 +25,7 @@ const BodyMatterBliss = () => {
        
                  {/* Text Section */}
                  <div className="w-full lg:w-1/2 flex flex-col gap-4">
-                   <Text variant='text5' className=" text-center lg:text-start font-marcellous">
+                   <Text variant='text5' className=" text-center lg:text-start marcellus-text leading-tight">
                     Why the Bliss Body Matters
                    </Text >
                    <Text variant='text1' className='flex items-center justify-center lg:justify-start gap-3'>
@@ -52,14 +52,18 @@ const BodyMatterBliss = () => {
        </span>Inspires love, compassion, and positive energy toward others
                    </Text>
        
-                  <Button className='w-44 self-center lg:self-start'>Contact Us</Button>
-                 </div>
+<Button className="relative w-44 self-center lg:self-start  cursor-pointer overflow-hidden group text-black border border-black">
+  <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
+    Contact Us
+  </span>
+  <span className="absolute left-0 top-0 h-full w-0 bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+</Button>                 </div>
                </div>
        
                <div className="max-w-7xl mx-auto mt-30  flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-6 px-4 font-inter">
                  {/* Text Section */}
                  <div className="w-full lg:w-1/2 flex flex-col gap-4">
-                   <Text variant='text5' className="text-center lg:text-start  font-marcellous">
+                   <Text variant='text5' className="text-center lg:text-start  marcellus-text leading-tight">
                     Signs of a Balanced Bliss Body
                    </Text >
                    <Text variant='text1' className='flex items-center justify-center lg:justify-start gap-3'>

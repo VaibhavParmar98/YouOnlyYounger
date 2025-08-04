@@ -17,14 +17,14 @@ const CallToActtionBanner = () => {
         <Text variant='text2' className="text-white 
         
           
-         leading-tight font-marcellous">
+         leading-tight marcellus-text">
           Book a Personalized Consultation
         </Text>
 
         <Text variant='text4' className="text-white max-w-4xl 2xl:max-w-7xl
         
           
-         font-marcellous
+         marcellus-text leading-tight
          ">
           Our approach blends regenerative medicine with holistic care,
           addressing your entire system to promote deep healing, lifelong
@@ -32,8 +32,12 @@ const CallToActtionBanner = () => {
           and true alignment from within.
         </Text>
 
-       <Button className='text-[18px] w-48' variant='colourWhite'>Book Appointment</Button>
-      </div>
+<Button variant='colourWhite' className="relative w-44 self-center  cursor-pointer overflow-hidden group text-black border border-black">
+  <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
+    Book Appointment
+  </span>
+  <span className="absolute left-0 top-0 h-full w-0 bg-[#400186] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+</Button>       </div>
     </div>
   );
 };

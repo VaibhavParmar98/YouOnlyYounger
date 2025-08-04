@@ -1,5 +1,6 @@
 import React from 'react'
 import Text from '../Common/Text'
+import { NavLink } from 'react-router-dom'
 
 const BannerVital = () => {
   return (
@@ -9,10 +10,10 @@ const BannerVital = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2  gap-8 relative">
           {/* Left Content */}
           <div className=' flex flex-col xl:mt-10 lg:mt-14 md:mt-3'>
-            <Text variant='text2' className="  mb-4 font-marcellous">Vital Body</Text>
+            <Text variant='text2' className="  mb-4 marcellus-text leading-tight">Vital Body</Text>
             {/* Breadcrumb */}
             <Text variant='text3' className="flex items-center space-x-2  flex-wrap">
-              <Text className="hover:underline cursor-pointer">Home</Text>
+              <NavLink to='/' className="hover:underline cursor-pointer">Home</NavLink>
               <span>›</span>
               <Text className="text-gray-300">The Vital Body</Text>
             </Text>

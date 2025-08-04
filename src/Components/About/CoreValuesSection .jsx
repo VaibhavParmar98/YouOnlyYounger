@@ -52,7 +52,7 @@ const CoreValuesSection = () => {
           {/* Right Content */}
           <div className="w-full xl:w-1/2 text-center lg:text-left flex flex-col justify-between">
             <div>
-              <Text variant="text5" className=" font-marcellous text-center xl:text-start">
+              <Text variant="text5" className=" marcellus-text leading-tight text-center xl:text-start">
                 Our Core Values:
               </Text>
               <Text variant="text1" className="text-center xl:text-start">
@@ -79,8 +79,12 @@ const CoreValuesSection = () => {
 
             {/* Button */}
             <div className="mt-6">
-             <Button className="w-36 self-center xl:self-start items-center md:mb-10 lg:mb-0 mt-0">Contact Us</Button>
-            </div>
+<Button className="relative w-44 self-center lg:self-start cursor-pointer overflow-hidden group text-black border border-black">
+  <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
+    Contact Us
+  </span>
+  <span className="absolute left-0 top-0 h-full w-0 bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+</Button>             </div>
           </div>
         </div>
       </section>

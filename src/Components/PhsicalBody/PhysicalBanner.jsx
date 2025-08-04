@@ -1,6 +1,7 @@
 import React from 'react';
 import Text from '../Common/Text';
 import Button from '../Common/Button';
+import { NavLink } from 'react-router-dom';
 
 const PhysicalBanner = () => {
   return (
@@ -10,10 +11,10 @@ const PhysicalBanner = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2  gap-8 relative">
           {/* Left Content */}
           <div className=' flex flex-col xl:mt-10 lg:mt-14 md:mt-3'>
-            <Text variant='text2' className="  mb-4 font-marcellous">Physical Body</Text>
+            <Text variant='text2' className="  mb-4 marcellus-text leading-tight">Physical Body</Text>
             {/* Breadcrumb */}
             <Text variant='text3' className="flex items-center space-x-2  flex-wrap">
-              <Text className="hover:underline cursor-pointer">Home</Text>
+              <NavLink to='/'className="hover:underline cursor-pointer">Home</NavLink>
               <span>›</span>
               <Text className="text-gray-300">Physical Body</Text>
             </Text>
@@ -39,7 +40,7 @@ const PhysicalBanner = () => {
 
         {/* Text */}
         <div className="w-full text-center lg:text-justify lg:w-1/2 flex flex-col gap-5  2xl:mr-0 xl:mr-0 lg:mr-3 mr-0">
-          <Text variant='text5' className="text-2xl md:text-4xl font-semibold font-marcellous mt-6">What Is the Physical Body?</Text>
+          <Text variant='text5' className="text-2xl md:text-4xl font-semibold marcellus-text leading-tight mt-6">What Is the Physical Body?</Text>
           <Text variant='text1'>
             The Physical Body—called the Annamaya Kosha in yogic science—is the outermost layer of your being. It includes your bones, muscles, organs, tissues, and physical structure. It’s nourished by food (anna), strengthened through movement, and impacted by everything from stress to environment. This is the body where symptoms first appear, but not always where they begin.
           </Text>
@@ -50,7 +51,12 @@ const PhysicalBanner = () => {
             Ignoring the signals of the Physical Body often leads to chronic fatigue, inflammation, or illness that conventional treatments may only mask.
           </Text>
 
-         <Button className='w-44 self-center lg:self-start  '>Contact Us</Button>
+        <Button className="relative w-44 self-center lg:self-start cursor-pointer overflow-hidden group text-black border border-black">
+  <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
+    Contact Us
+  </span>
+  <span className="absolute left-0 top-0 h-full w-0 bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+</Button>
         </div>
       </div>
     </div>

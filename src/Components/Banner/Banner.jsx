@@ -16,11 +16,11 @@ const Banner = () => {
       />
 
       <div className="w-full flex flex-col md:flex-row md:items-center md:justify-between">
-        <div className="md:w-1/2 w-full flex flex-col md:items-start text-center md:text-left items-center gap-3 2xl:ml-20 xl:ml-20 md:ml-6 py-10 2xl:gap-8">
+        <div className="md:w-1/2 w-full flex flex-col md:items-start text-center md:text-left items-center gap-3 2xl:ml-20 xl:ml-20 md:ml-6 py-10 2xl:gap-6">
           <p className="lg:text-[16px] md:text-[14px] text-[12px] font-bold bg-white text-[#400186] px-2">
             Hi, I’m Dr. Kami Owen
           </p>
-          <h1 className="lg:text-[50px] md:text-[30px]  text-[28px] font-marcellous">
+          <h1  className="lg:text-[50px]  md:text-[30px]  text-[28px] marcellus-text leading-tight">
             Transform Every Layer of <br className="2xl:block md:hidden" />
             <span className="text-[#400185]">Your Health</span>
           </h1>
@@ -29,8 +29,13 @@ const Banner = () => {
             aligning Physical, Vital, Mental, Supermental, and Bliss bodies.
           </p>
           <div className="flex items-center md:justify-start justify-center mt-5 gap-6">
-            <Button variant="black" className="w-48">Book Appointment</Button>
-            <button className="lg:text-[16px] md:text-[14px] text-[12px]">
+        <Button variant="black"  className="relative w-44 self-center cursor-pointer overflow-hidden group text-black border border-black">
+  <span className="relative z-10 transition-colors duration-300 group-hover:text-black">
+    Book Appointment
+  </span>
+  <span className="absolute left-0 top-0 h-full w-0 bg-white transition-all duration-300 ease-in-out group-hover:w-full"></span>
+</Button>
+            <button  className="lg:text-[16px] md:block hidden cursor-pointer md:text-[14px] text-[12px]">
               Contact Us
             </button>
           </div>
@@ -45,7 +50,7 @@ const Banner = () => {
           />
 
           <img
-            src="./50.png"
+            src="./90.png"
             alt="Banner"
             className="h-full w-full object-contain rounded relative z-20"
           />

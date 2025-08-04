@@ -18,13 +18,17 @@ const CirculationVitalBody = () => {
 
         {/* Text Section */}
         <div className="w-full lg:w-1/2 text-center lg:text-left flex flex-col gap-4">
-          <Text variant='text5' className="  font-marcellous">
+          <Text variant='text5' className="  marcellus-text leading-tight">
 The Body of Energy and Circulation          </Text>
           <Text variant='text1' className=" ">
 The Vital Body is your energetic powerhouse—the invisible current that fuels every cell, organ, and system. It governs digestion, immunity, and overall vitality, ensuring that your physical body stays vibrant and resilient. When your Vital Body is balanced, you feel energetic, radiant, and alive; when depleted, fatigue and illness creep in.          </Text>
          
-          <Button className='w-44 self-center lg:self-start'>Contact Us</Button>
-        </div>
+<Button  className="relative w-44 self-center lg:self-start  cursor-pointer overflow-hidden group text-black border border-black">
+  <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
+    Contact Us
+  </span>
+  <span className="absolute left-0 top-0 h-full w-0 bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+</Button>         </div>
       </div>
     </div>
     </div>

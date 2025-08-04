@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const AboutBanner = () => {
   return (
@@ -7,10 +8,10 @@ const AboutBanner = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2  gap-8 relative">
           {/* Left Content */}
           <div className=' flex flex-col xl:mt-10 lg:mt-14 md:mt-3'>
-            <h1 className="xl:text-[50px] lg:text-[47px] md:text-[30px]  text-[28px] font-marcellous">About You only Younger</h1>
+            <h1 className="xl:text-[50px] lg:text-[47px] md:text-[30px]  text-[28px] marcellus-text leading-tight">About You only Younger</h1>
             {/* Breadcrumb */}
             <nav className="flex items-center space-x-2 text-sm flex-wrap lg:text-[18px] md:text-[14px] text-[14px]">
-              <span className="hover:underline cursor-pointer">Home</span>
+              <NavLink to='/' className="hover:underline cursor-pointer">Home</NavLink>
               <span>›</span>
               <span className="text-gray-300">About</span>
             </nav>
@@ -28,7 +29,7 @@ const AboutBanner = () => {
       </section>
  <div className="max-w-7xl mx-auto  py-20 px-4 md:mt-10 mt-12">
   <div className="flex flex-col gap-6 items-center justify-center">
-    <img src="./32.png" alt="" className="lg:w-40 w-24  mt-0  object-contain" />
+    <img src="./101.svg" alt="" className="lg:w-40 w-24  mt-0  object-contain" />
 
     {/* Responsive Two Column Section */}
    <div className="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-10 w-full">

@@ -14,11 +14,16 @@ const InterSection = () => {
       <div className="absolute inset-0 bg-black/50 z-10"></div>
 
       <div className="absolute inset-0 z-20 flex items-center justify-center flex-col gap-2 xs:gap-3 sm:gap-4 md:gap-5 lg:gap-6 xl:gap-8 max-w-[1536px] mx-auto px-4">
-        <Text  className="text-white text-[30px] md:text-[40px] lg:text-[50px] xl:text-[72px] font-marcellous  text-center leading-tight sm:leading-snug md:leading-normal">
+        <Text variant="text2"  className="text-white  marcellus-text leading-tight  text-center l sm:leading-snug md:leading-normal">
           Aligned Through Mind, <br />Body, and Energy.
         </Text>
-        <button className="flex bg-[#400186] text-white rounded-full items-center xl:px-5 xl:py-3 lg:py-2 lg:px-4 md:py-1.5 md:px-3 py-1.5 px-3 gap-3 text-[16px] md:text-[18px] lg:text-[20px]">          <IoMdPlayCircle  className="text-[20px] md:text-[20px] lg:text-[36px]"/>
-Watch Showreel</button>
+              <Button className="relative w-44 self-center  cursor-pointer overflow-hidden group text-black border border-black">
+  <span className="relative z-10 transition-colors duration-300 group-hover:text-black">
+  Book Appointment
+  </span>
+  <span className="absolute left-0 top-0 h-full w-0 bg-white transition-all duration-300 ease-in-out group-hover:w-full"></span>
+</Button> 
+       
       </div>
     </div>
   );

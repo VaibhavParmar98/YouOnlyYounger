@@ -42,7 +42,7 @@ const FandQ = () => {
         className=" absolute 2xl:-left-70 2xl:top-44 lg:-left-60 lg:top-36 md:-left-30 md:top-56 lg:w-64 lg:h-64 md:w-44 md:h-44"
       />
 
-      <Text variant="text5" className=" text-center mb-10 font-marcellous">
+      <Text variant="text5" className=" text-center mb-10 marcellus-text leading-tight">
         Frequently Asked Questions
       </Text>
 
@@ -61,7 +61,7 @@ const FandQ = () => {
               onClick={() => toggle(index)}
               className="flex justify-between items-center cursor-pointer"
             >
-              <Text variant="text3" className="font-medium  text-gray-800 font-marcellous">
+              <Text variant="text3" className="font-medium  text-gray-800 marcellus-text leading-tight">
                 {index + 1}. {item.ques}
               </Text>
               <div className="bg-[#400186] p-2">

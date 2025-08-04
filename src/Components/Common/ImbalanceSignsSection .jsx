@@ -22,10 +22,10 @@ const ImbalanceSignsSection = () => {
       <div className="max-w-7xl relative z-10 mx-auto flex flex-col lg:flex-row items-center justify-between ">
         {/* Left Section */}
         <div className="w-full lg:w-1/2">
-          <Text variant="text5" className=" mb-4 text-center lg:text-left font-marcellous">
+          <Text variant="text5" className=" mb-4 text-center lg:text-left marcellus-text leading-tight">
             When This Body Is Out of Balance
           </Text>
-          <Text variant="text4" className=" text-[#400186] text-center lg:text-left mb-6 font-marcellous">
+          <Text variant="text4" className=" text-[#400186] text-center lg:text-left mb-6 marcellus-text leading-tight">
             What Are the Signs of Imbalance?
           </Text>
 
@@ -40,26 +40,25 @@ const ImbalanceSignsSection = () => {
         </div>
 
         {/* Right Section */}
-        <div className="w-full lg:w-1/2 flex flex-col lg:flex-row items-center justify-center gap-6">
-          {/* Stats Box */}
-          <div className="bg-[#400186] text-white py-4 px-6 lg:mt-0 mt-6 rounded-lg text-center w-full sm:w-auto">
-            <Text variant="text2" className=" font-semibold">500+</Text> 
-            <Text variant="text3" className="whitespace-nowrap">
-              
-              Happy Customers
-            </Text>
-            
-          </div>
+      <div className="w-full lg:w-1/2 flex flex-col lg:flex-row items-center justify-center gap-6">
+  {/* Stats Box */}
+  <div className="bg-[#400186] text-white p-6 rounded-lg text-center lg:w-auto w-40 h-30 mt-6 lg:mt-0 flex flex-col justify-center xl:min-h-[210px] lg:min-h-[176px]">
+    <Text variant="text2" className="font-semibold">500+</Text> 
+    <Text variant="text3" className="whitespace-nowrap">
+      Happy Customers
+    </Text>
+  </div>
 
-          {/* Image */}
-          <div className="w-full flex items-center justify-center  overflow-hidden rounded-xl ">
-            <img
-              src="./42.jpg"
-              alt="Happy customer"
-              className="object-cove w-full h-full md:w-96 rounded-xl"
-            />
-          </div>
-        </div>
+  {/* Image */}
+  <div className="w-full md:w-96 flex items-center justify-center overflow-hidden rounded-xl">
+    <img
+      src="./42.jpg"
+      alt="Happy customer"
+      className="object-cover w-full h-full lg:max-h-[210px] rounded-xl"
+    />
+  </div>
+</div>
+
       </div>
     </section>
   );

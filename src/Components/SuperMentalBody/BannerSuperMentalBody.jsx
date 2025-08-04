@@ -1,5 +1,6 @@
 import React from 'react'
 import Text from '../Common/Text'
+import { NavLink } from 'react-router-dom'
 
 const BannerSuperMentalBody = () => {
   return (
@@ -9,10 +10,10 @@ const BannerSuperMentalBody = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2  gap-8 relative">
           {/* Left Content */}
           <div className=' flex flex-col xl:mt-10 lg:mt-14 md:mt-3'>
-            <Text variant='text2' className=" mb-4 font-marcellous">Supermental Body</Text>
+            <Text variant='text2' className=" mb-4 marcellus-text leading-tight">Supermental Body</Text>
             {/* Breadcrumb */}
             <Text variant='text3' className="flex items-center space-x-2  flex-wrap">
-              <span className="hover:underline cursor-pointer">Home</span>
+              <NavLink to='/' className="hover:underline cursor-pointer">Home</NavLink>
               <span>›</span>
               <span className="text-gray-300">Supermental Body</span>
             </Text>
@@ -21,7 +22,7 @@ const BannerSuperMentalBody = () => {
           {/* Right Image (Positioned Absolutely on md+ screens, static on small) */}
           <div className="absolute -right-3 top-10  flex justify-center mt-2 md:mt-0">
             <img
-              src="./82.png"
+              src="./102.jpg"
               alt="About You Only Younger"
               className=" xl:w-[500px] xl:h-[350px] lg:w-96 lg:h-72 md:h-44 h-32  rounded-xl shadow-lg"
             />

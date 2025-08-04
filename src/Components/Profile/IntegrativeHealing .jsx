@@ -9,14 +9,14 @@ const IntegrativeHealing = () => {
       <div className="max-w-7xl mx-auto w-full bg-[#F6F6F6] flex flex-col lg:flex-row gap-6 rounded-xl p-6 sm:p-10">
         
         {/* Text Content */}
-        <div className="flex text-center lg:text-start flex-col gap-6 w-full lg:w-1/2">
-          <Text variant="text5" className=" font-marcellous">
+        <div className="flex text-start flex-col gap-6 w-full lg:w-1/2">
+          <Text variant="text5" className=" marcellus-text leading-tight">
             Where Beauty Meets Balance, and Healing Begins Within.
           </Text>
 
           {/* Block 1 */}
           <div className="flex flex-col gap-3">
-            <Text variant="text4" className="flex items-center gap-3  font-marcellous">
+            <Text variant="text4" className="flex items-center gap-3  marcellus-text leading-tight">
               <FaCheckCircle className="text-[#400186] " />
               Healing Your Body Faster
             </Text>
@@ -31,7 +31,7 @@ const IntegrativeHealing = () => {
 
           {/* Block 2 */}
           <div className="flex flex-col gap-3">
-            <Text variant="text4" className="flex items-center gap-3  font-marcellous">
+            <Text variant="text4" className="flex items-center gap-3  marcellus-text leading-tight">
               <FaCheckCircle className="text-[#400186] " />
               Integrative Medicine
             </Text>
@@ -44,11 +44,15 @@ const IntegrativeHealing = () => {
             </Text>
           </div>
 
-         <Button className="w-44 self-center lg:self-start">About Me</Button>
-        </div>
+<Button className="relative w-44 self-center lg:self-start cursor-pointer overflow-hidden group text-black border border-black">
+  <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
+    About Me
+  </span>
+  <span className="absolute left-0 top-0 h-full w-0 bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+</Button>         </div>
 
         {/* Image Content */}
-        <div className="w-full lg:w-1/2 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="w-full lg:w-1/2 flex   items-center justify-center gap-4">
           <img src="./24.png" alt="Image 1" className="h-60 sm:h-72 lg:h-80 mt-4 sm:mt-10 object-contain" />
           <div className="flex flex-col gap-3">
             <img src="./25.png" alt="Image 2" className="h-60 sm:h-72 lg:h-80 object-contain" />

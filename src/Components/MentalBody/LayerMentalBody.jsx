@@ -19,7 +19,7 @@ const LayerMentalBody = () => {
 
           {/* Text Section */}
           <div className="w-full text-center lg:text-left lg:w-1/2 flex flex-col xl:gap-10 lg:gap-6 gap-6">
-            <Text variant="text5" className="  font-marcellous">
+            <Text variant="text5" className="  marcellus-text leading-tight">
               What is the Mental Body?{" "}
             </Text>
             <Text variant="text1" className=" text-gray-700">
@@ -29,14 +29,18 @@ const LayerMentalBody = () => {
               A balanced Mental Body supports clarity, focus, and positive thinking, while an overactive or negative mental state can lead to anxiety, confusion, and emotional imbalance
             </Text>
 
-            <Button className='w-44 self-center lg:self-start'>Contact Us</Button>
-          </div>
+<Button className="relative w-44 self-center lg:self-start  cursor-pointer overflow-hidden group text-black border border-black">
+  <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
+   Contact Us
+  </span>
+  <span className="absolute left-0 top-0 h-full w-0 bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+</Button>          </div>
         </div>
 
         <div className="max-w-7xl mx-auto mt-30  flex flex-col lg:flex-row items-center gap-6 px-4 font-inter">
           {/* Text Section */}
           <div className="w-full lg:w-1/2 text-center lg:text-left flex flex-col gap-4">
-            <Text variant="text5" className=" font-marcellous">
+            <Text variant="text5" className=" marcellus-text leading-tight">
               Why the Mental Body Matters
             </Text>
             <Text variant="text1" className=" flex items-center self-center lg:self-start gap-3 text-gray-700">

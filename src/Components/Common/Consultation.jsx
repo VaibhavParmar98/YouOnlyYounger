@@ -15,18 +15,23 @@ const Consultation = () => {
       <div className="absolute inset-0 z-20 flex items-center justify-center flex-col gap-4 px-4 text-center">
        <Text variant="text2" className="text-white 
        
-         leading-tight font-marcellous">
+         leading-tight marcellus-text ">
          Book a Personalized Consultation
         </Text>
 <Text variant="text4" className="text-white
         
-         font-marcellous">          Our approach blends regenerative medicine with holistic care,
+         marcellus-text leading-tight">          Our approach blends regenerative medicine with holistic care,
           <br className="hidden sm:block" />
             addressing your entire system to promote deep healing, lifelong
           vitality,
           and true alignment from within.
         </Text>
-          <Button variant="colourWhite" className="w-52">Book an appointment</Button>
+<Button variant="colourWhite" className="relative w-44 self-center cursor-pointer overflow-hidden group text-black border border-black">
+  <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
+    Book Appointment
+  </span>
+  <span className="absolute left-0 top-0 h-full w-0 bg-[#400186] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+</Button>
       </div>
     </div>
   );

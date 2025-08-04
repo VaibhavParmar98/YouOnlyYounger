@@ -5,7 +5,7 @@ const Tools = () => {
   return (
     <div className='bg-[#400186] py-10 lg:py-20 '>
       <div className='max-w-6xl mx-auto text-center mb-20 text-white'>
-        <Text variant='text5' className='font-marcellous'>Tools & Therapies We Use</Text>
+        <Text variant='text5' className='marcellus-text leading-tight'>Tools & Therapies We Use</Text>
         <Text variant='text1'>To restore and rebalance your Physical Body, we use a combination of advanced diagnostics and natural therapies. These methods work together to support healing, reduce symptoms, and strengthen your body’s core systems.</Text>
       </div>
       <div className='max-w-7xl grid grid-cols-1 md:grid-cols-3 mx-auto  text-white'>

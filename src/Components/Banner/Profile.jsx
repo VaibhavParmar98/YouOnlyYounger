@@ -23,7 +23,7 @@ const Profile = () => {
 
             <Text variant="text2" className=" w-full
            
-             leading-tight font-marcellous">
+             leading-tight marcellus-text ">
               Transform Every Layer of Your Health
             </Text>
 

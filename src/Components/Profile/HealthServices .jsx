@@ -49,7 +49,7 @@ const HealthServices = () => {
             </Text>
             {/* Content */}
             <div className="p-6 flex flex-col flex-grow">
-              <Text variant="text4" className="  mb-3 font-marcellous">{service.title}</Text>
+              <Text variant="text4" className="  mb-3 marcellus-text leading-tight">{service.title}</Text>
               <Text variant="text1" className="text-gray-600  mb-6 flex-grow">{service.desc}</Text>
               <Text variant="text1"
                 // href={service.link}
