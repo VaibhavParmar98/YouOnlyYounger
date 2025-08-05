@@ -11,9 +11,8 @@ const CardBlog = () => {
     <>
     
        <div className='max-w-7xl mx-auto mt-40 py-10 lg:py-20'>
-             <div className='text-center'>
+             <div className='text-center lg:mb-10 mb-6'>
             <Text variant='text5' className='marcellus-text'>Blog</Text>
-            <Text variant='text1'>tset</Text>
         </div>
         <div onClick={() => navigate("/blog-one")} className=" w-[530px] cursor-pointer border mx-auto bg-[#F6F6F6] rounded-t-lg rounded-b-lg overflow-hidden flex-shrink-0 flex flex-col">
              <img
