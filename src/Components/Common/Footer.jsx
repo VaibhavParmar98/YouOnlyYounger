@@ -9,8 +9,12 @@ import {
 } from "lucide-react";
 import Text from "./Text";
 import Button from "./Button";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Footer = () => {
+
+  const navigate = useNavigate()
+
   return (
     <div className="relative text-white font-inter overflow-hidden">
       {/* Overlay Image on Top of Everything (no effect on background) */}
@@ -196,10 +200,10 @@ const Footer = () => {
                   <Text variant="text1" className="text-center lg:text-start">
                     FAQ’s
                   </Text>
-                  <Text variant="text1" className="text-center lg:text-start">
+<NavLink to='/privacy-policy' >                  <Text  variant="text1" className="text-center lg:text-start">
                     Privacy Policy
                   </Text>
-                  <Text variant="text1" className="text-center lg:text-start">
+</NavLink>                 <Text variant="text1" className="text-center lg:text-start">
                     Conditions
                   </Text>
                   <Text variant="text1" className="text-center lg:text-start">
