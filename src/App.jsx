@@ -12,6 +12,10 @@ import MentalBody from "./Pages/MentalBody/MentalBody";
 import SuperMentalBody from "./Pages/SuperMentalBody/SuperMentalBody";
 import BlissBody from "./Pages/BlissBody/BlissBody";
 import { useState } from "react";
+import Gallery from "./Pages/Gallery/Gallery";
+import Blog from "./Pages/Blog/Blog";
+import OneBlog from "./Pages/Blog/OneBlog";
+import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy";
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,6 +38,10 @@ const App = () => {
           <Route path="/healing" element={<PhysicalBody />} />
           <Route path="/vital-body" element={<VitalBody />} />
           <Route path="/mental-body" element={<MentalBody />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog-one" element={<OneBlog />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/super-mental-body" element={<SuperMentalBody />} />
           <Route path="/bliss-body" element={<BlissBody />} />
           <Route path="/contact" element={<Contact />} />

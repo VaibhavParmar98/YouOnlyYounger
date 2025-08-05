@@ -1,0 +1,120 @@
+.main-container {
+            max-width: 1396px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1.5rem; /* 6 * 0.25rem */
+            padding-right: 1.5rem;
+        }
+
+        /* Grid layout for single or double column arrangement */
+        .grid-sticky-halves {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 4rem; /* 16 * 0.25rem */
+        }
+        @media (min-width: 768px) {
+            .grid-sticky-halves {
+                grid-template-columns: 1fr 1fr;
+                gap: 4rem;
+            }
+        }
+
+        /* Sticky section styles for fixed left-side content */
+        .left-sticky-halves {
+            align-self: stretch;
+            justify-self: stretch;
+        }
+        @media (min-width: 768px) {
+            .left-sticky-halves {
+                justify-self: center;
+            }
+        }
+        .sticky-sticky-halves {
+            position: sticky;
+            top: 4rem; /* 16 * 0.25rem */
+        }
+        .left-process-sticky {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem; /* 6 * 0.25rem */
+            align-items: flex-start;
+            max-width: 430px;
+            text-align: center;
+        }
+        @media (min-width: 768px) {
+            .left-process-sticky {
+                align-items: center;
+            }
+        }
+
+        /* Process tiles styles for right-side cards */
+        .right-process-sticky {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem; /* 6 * 0.25rem */
+        }
+        .tile-process-sticky {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem; /* 16 * 0.25rem */
+            background-color: #2d2d29;
+            border-radius: 1.5rem; /* 6 * 0.25rem */
+            padding: 3.5rem; /* 14 * 0.25rem */
+            color: var(--color--light-darker);
+        }
+        .top-process-tile {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem; /* 8 * 0.25rem */
+            align-items: center;
+        }
+        @media (min-width: 768px) {
+            .top-process-tile {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+        }
+        .icon-process {
+            width: 5rem; /* 20 * 0.25rem */
+            height: 5rem;
+        }
+        .paragraph-big {
+            font-size: var(--type--body-big);
+            line-height: 130%;
+        }
+
+        /* Image quote section styles */
+        .wrap-image-quote {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem; /* 16 * 0.25rem */
+            width: 80%;
+            max-width: 1000px;
+            position: relative;
+            z-index: 10;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .image-quote-section img {
+            width: 100%;
+            border-radius: 1.5rem; /* 6 * 0.25rem */
+        }
+        .bottom-image-quote {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem; /* 6 * 0.25rem */
+            align-items: flex-start;
+            max-width: 850px;
+        }
+        .icon-quote {
+            height: 3rem; /* 12 * 0.25rem */
+        }
+        .color-fill-image-quote {
+            height: 20%;
+            max-height: 250px;
+            background-color: var(--color--dark);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
