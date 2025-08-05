@@ -35,7 +35,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           {/* <Route path='/profile' element={<ProfilePage/>} /> */}
           <Route path="/about" element={<About />} />
-          <Route path="/healing" element={<PhysicalBody />} />
+          <Route path="/physical-body" element={<PhysicalBody />} />
           <Route path="/vital-body" element={<VitalBody />} />
           <Route path="/mental-body" element={<MentalBody />} />
           <Route path="/blog" element={<Blog />} />

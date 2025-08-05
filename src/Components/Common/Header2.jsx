@@ -1,12 +1,17 @@
 import { useEffect, useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import Button from "./Button";
 
 const Header2 = ({ isMenuOpen, setIsMenuOpen }) => {
   const [isBeautyOpenMobile, setIsBeautyOpenMobile] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation(); // ✅ New: Track current route
 
+  // 🔁 Auto-close dropdown on route change (desktop/mobile)
+  useEffect(() => {
+    setIsBeautyOpenMobile(false);
+  }, [location.pathname]);
 
   // 🔒 Scroll Lock
   useEffect(() => {
@@ -75,18 +80,19 @@ const Header2 = ({ isMenuOpen, setIsMenuOpen }) => {
                 }`}
               >
                 {[
-                  "Physical Body",
-                  "Vital Body",
-                  "Mental Body",
-                  "Super Mental Body",
-                  "Bliss Body",
+                  { label: "Physical Body", path: "/physical-body" },
+                  { label: "Vital Body", path: "/vital-body" },
+                  { label: "Mental Body", path: "/mental-body" },
+                  { label: "Super Mental Body", path: "/super-mental-body" },
+                  { label: "Bliss Body", path: "/bliss-body" },
                 ].map((item, i) => (
-                  <span
+                  <NavLink
+                    to={item.path}
                     key={i}
                     className="px-3 py-1 hover:bg-gray-100 cursor-pointer rounded"
                   >
-                    {item}
-                  </span>
+                    {item.label}
+                  </NavLink>
                 ))}
               </div>
             </div>
@@ -177,18 +183,23 @@ const Header2 = ({ isMenuOpen, setIsMenuOpen }) => {
             {isBeautyOpenMobile && (
               <div className="lg:hidden mt-2 grid grid-cols-1 gap-1 bg-gray-50 p-2 rounded">
                 {[
-                  "Physical Body",
-                  "Vital Body",
-                  "Mental Body",
-                  "Super Mental Body",
-                  "Bliss Body",
+                  { label: "Physical Body", path: "/physical-body" },
+                  { label: "Vital Body", path: "/vital-body" },
+                  { label: "Mental Body", path: "/mental-body" },
+                  { label: "Super Mental Body", path: "/super-mental-body" },
+                  { label: "Bliss Body", path: "/bliss-body" },
                 ].map((item, i) => (
-                  <span
+                  <NavLink
                     key={i}
+                    to={item.path}
                     className="px-3 py-1 hover:bg-gray-100 rounded text-sm"
+                    onClick={() => {
+                      setIsMenuOpen(false);
+                      setIsBeautyOpenMobile(false);
+                    }}
                   >
-                    {item}
-                  </span>
+                    {item.label}
+                  </NavLink>
                 ))}
               </div>
             )}
@@ -204,16 +215,16 @@ const Header2 = ({ isMenuOpen, setIsMenuOpen }) => {
               >
                 Book Appointment
               </button>
-                <button
-                  onClick={() => {
-                    navigate('/contact')
-                    setIsMenuOpen(false);
-                    setIsBeautyOpenMobile(false);
-                  }}
-                  className="p-2 border hover:text-[#400186] rounded-full text-xs w-full max-w-xs mx-auto"
-                >
-                  Contact Us
-                </button>
+              <button
+                onClick={() => {
+                  navigate("/contact");
+                  setIsMenuOpen(false);
+                  setIsBeautyOpenMobile(false);
+                }}
+                className="p-2 border hover:text-[#400186] rounded-full text-xs w-full max-w-xs mx-auto"
+              >
+                Contact Us
+              </button>
             </div>
           </>
         )}
