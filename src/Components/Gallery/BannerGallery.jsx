@@ -20,7 +20,7 @@ const BannerGallery = () => {
           {/* Right Image (Positioned Absolutely on md+ screens, static on small) */}
           <div className="absolute -right-3 top-10  flex justify-center mt-2 md:mt-0">
             <img
-              src="./81.png"
+              src="./074.jpeg"
               alt="About You Only Younger"
               className=" xl:w-[500px] xl:h-[350px] lg:w-96 lg:h-72 md:h-44 h-32  rounded-xl shadow-lg"
             />
