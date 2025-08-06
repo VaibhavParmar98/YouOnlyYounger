@@ -55,7 +55,7 @@ const ClientReview = () => {
   };
 
   const ReviewCard = ({ item }) => (
-    <div className=" w-72 mx-auto bg-white rounded-t-lg rounded-b-lg overflow-hidden flex-shrink-0 flex flex-col">
+    <div className=" w-72 mx-auto overflow-x-hidden bg-white rounded-t-lg rounded-b-lg overflow-hidden flex-shrink-0 flex flex-col">
       <img
         src={item.img}
         alt={item.name}
@@ -88,7 +88,7 @@ const ClientReview = () => {
   );
 
   return (
-    <div className="pt-10 pb-16 py-10 lg:py-20  bg-[#F6F6F6] overflow-hidden">
+    <div className="pt-10 overflow-x-hidden pb-16 py-10 lg:py-20  bg-[#F6F6F6] overflow-hidden">
     <div className="flex mb-6 flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-4 md:px-10">
   <Text variant="text5" className=" marcellus-text mb-4 md:mb-0">
     Client Testimonials

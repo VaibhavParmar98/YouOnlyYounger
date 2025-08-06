@@ -14,7 +14,7 @@ import StrengthVitalBody from '../../Components/Common/StrengthVitalBody'
 
 const BlissBody = () => {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <BannerBliss/>
       <BodyMatterBliss/>
       <ImbalanceSignsSection/>

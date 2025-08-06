@@ -2,7 +2,7 @@ import Button from "../Common/Button";
 
 const Banner = () => {
   return (
-    <div className="relative bg-[linear-gradient(to_right,_#edeaf1,_#ece7f2,_#e5dcf1)] w-full h-auto font-inter overflow-hidden">
+    <div className="relative overflow-x-hidden bg-[linear-gradient(to_right,_#edeaf1,_#ece7f2,_#e5dcf1)] w-full h-auto font-inter overflow-hidden">
       <img
         src="./53.png"
         alt=""

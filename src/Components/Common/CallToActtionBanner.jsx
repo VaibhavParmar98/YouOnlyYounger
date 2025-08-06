@@ -4,7 +4,7 @@ import Text from './Text';
 
 const CallToActtionBanner = () => {
   return (
-    <div className="relative w-full h-[55vh]  md:h-[55vh] lg:h-[55vh] ">
+    <div className="relative overflow-x-hidden w-full h-[55vh]  md:h-[55vh] lg:h-[55vh] ">
       <img
         src="./21.png"
         alt="intro section"

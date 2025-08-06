@@ -2,7 +2,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 const Header1 = () => {
   return (
-    <div className="w-full bg-[#2C005C]">
+    <div className="w-full overflow-x-hidden bg-[#2C005C]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
         <div className="flex items-center justify-center text-white">
           <a href="https://youonlyyounger.com/dr-kami-on-unleashing-intuition-secrets-podcast/">

@@ -4,7 +4,7 @@ import Text from "../Common/Text";
 
 const LicensesAndCertifications = () => {
   return (
-    <div className="bg-[#F6F6F6] py-10 lg:py-20 font-inter">
+    <div className="bg-[#F6F6F6] overflow-x-hidden py-10 lg:py-20 font-inter">
       <div className="max-w-7xl mx-auto md:p-3">
         <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-6 p-3 relative">
           {/* Image */}
@@ -16,7 +16,7 @@ const LicensesAndCertifications = () => {
             />
             {/* Decorative box image */}
             <img
-              src="./31.png"
+              src="./31.svg"
               alt=""
               className="absolute w-28 h-28 xl:w-56 xl:h-56 -left-5 2xl:-left-60 2xl:-top-40 xl:-left-50 xl:-top-20 lg:-left-0 lg:top-72 md:-left-0 md:-top-44 mt-44 md:mt-64 z-0"
             />

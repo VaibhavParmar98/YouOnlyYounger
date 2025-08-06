@@ -8,7 +8,7 @@ import OurMission from "../../Components/Contact/OurMission"
 
 const Contact = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <ContactBanner/>
       <BookingSection/>
       <OurMission/>

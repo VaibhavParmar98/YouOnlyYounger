@@ -4,7 +4,7 @@ import Text from "./Text";
 
 const InterSection = () => {
   return (
-    <div className="relative w-full h-[50vh]  md:h-[60vh] lg:h-[60vh] xl:h-[75vh] 2xl:h-[75vh] ">
+    <div className="relative  overflow-x-hidden w-full h-[50vh]  md:h-[60vh] lg:h-[60vh] xl:h-[75vh] 2xl:h-[75vh] ">
       <img
         src="./7.png" 
         alt="intro section"

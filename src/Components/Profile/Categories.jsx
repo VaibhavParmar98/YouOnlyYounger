@@ -3,7 +3,7 @@ import Text from '../Common/Text';
 
 const Categories = () => {
   return (
-    <div className="pt-10 lg:pt-20 px-4 marcellus-text leading-tight">
+    <div className="pt-10 overflow-x-hidden lg:pt-20 px-4 marcellus-text leading-tight">
       <Text variant='text5' className=" text-center mb-8">
         Categories
       </Text>

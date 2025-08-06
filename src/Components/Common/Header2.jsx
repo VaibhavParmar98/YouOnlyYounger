@@ -30,7 +30,7 @@ const Header2 = ({ isMenuOpen, setIsMenuOpen }) => {
   }, [isMenuOpen]);
 
   return (
-    <div className="relative z-[900] text-black bg-white w-full p-3 border border-black">
+    <div className="relative overflow-x-hidden z-[900] text-black bg-white w-full p-3 border border-black">
       <div className="2xl:max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between">
           {/* Logo */}

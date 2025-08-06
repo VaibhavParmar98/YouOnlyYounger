@@ -5,7 +5,7 @@ import Text from "../Common/Text";
 
 const IntegrativeHealing = () => {
   return (
-    <div className="py-10 lg:py-20 px-4 font-inter">
+    <div className="py-10 overflow-x-hidden lg:py-20 px-4 font-inter">
       <div className="max-w-7xl mx-auto w-full bg-[#F6F6F6] flex flex-col lg:flex-row gap-6 rounded-xl p-6 sm:p-10">
         
         {/* Text Content */}

@@ -5,7 +5,7 @@ import Button from "../Common/Button";
 
 const SignMentalBody = () => {
   return (
-    <div className="py-10 lg:py-20 bg-[#F6F6F6]">
+    <div className="py-10 overflow-x-hidden lg:py-20 bg-[#F6F6F6]">
       <div className="max-w-7xl mx-auto lg:flex-row flex flex-col p-6 md:p-0 items-center justify-center gap-10">
         <img src="./76.png" alt="" className="xl:w-auto xl:h-auto w-80 h-64"/>
         <div className="flex flex-col gap-3">

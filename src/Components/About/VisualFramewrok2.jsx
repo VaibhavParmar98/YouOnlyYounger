@@ -19,7 +19,7 @@ const VisualFramewrok2 = () => {
   ];
 
   return (
-    <section className="py-10 lg:py-20 px-4 sm:px-6 md:px-8 bg-white font-inter">
+    <section className="py-10 overflow-x-hidden lg:py-20 px-4 sm:px-6 md:px-8 bg-white font-inter">
       <div className="max-w-7xl mx-auto">
         {/* Main content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">

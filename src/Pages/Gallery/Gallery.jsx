@@ -7,7 +7,7 @@ import DeepHealing from '../../Components/Common/DeepHealing'
 
 const Gallery = () => {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <BannerGallery/>
       <BeforAfterGallery/>
       <ClientReview/>

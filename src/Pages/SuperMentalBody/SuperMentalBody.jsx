@@ -14,7 +14,7 @@ import StrengthVitalBody from '../../Components/Common/StrengthVitalBody'
 
 const SuperMentalBody = () => {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <BannerSuperMentalBody/>
       <WisdomSuperMentalBody/>
       <ImbalanceSignsSection/>

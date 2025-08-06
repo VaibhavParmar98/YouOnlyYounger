@@ -11,7 +11,7 @@ import CallToActtionBanner from '../../Components/Common/CallToActtionBanner'
 
 const About = () => {
   return (
-    <div>
+    <div className=''>
       <AboutBanner/>
      
         <CoreValuesSection/>

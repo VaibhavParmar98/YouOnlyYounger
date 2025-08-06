@@ -12,7 +12,7 @@ import Tools from '../../Components/PhsicalBody/Tools'
 
 const PhysicalBody = () => {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <PhysicalBanner/>
       <ImbalanceSignsSection/>
       <Tools/>

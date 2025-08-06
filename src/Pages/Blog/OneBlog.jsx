@@ -7,7 +7,7 @@ import DeepHealing from '../../Components/Common/DeepHealing'
 
 const OneBlog = () => {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <BannerOneBlog/>
       <DetailBlog/>
       <ClientReview/>

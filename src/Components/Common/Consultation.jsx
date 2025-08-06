@@ -3,7 +3,7 @@ import Text from "./Text";
 
 const Consultation = () => {
   return (
-    <div className="relative w-full h-[55vh]  md:h-[55vh] lg:h-[60vh]">
+    <div className="relative overflow-x-hidden w-full h-[55vh]  md:h-[55vh] lg:h-[60vh]">
       <img
         src="./19.png"
         alt="intro section"

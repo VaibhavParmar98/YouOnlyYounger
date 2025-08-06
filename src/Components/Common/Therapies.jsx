@@ -4,7 +4,7 @@ import Text from "./Text";
 
 const Therapies = () => {
   return (
-    <div className="py-10 lg:py-20">
+    <div className="py-10 overflow-x-hidden lg:py-20">
       <div className="max-w-7xl mx-auto bg-[#400186] rounded-2xl p-6">
         <div className="flex flex-col items-center gap-6">
             <Text variant="text5" className=" mt-10 text-white marcellus-text leading-tight ">Therapies to Rebalance the Vital Body</Text>

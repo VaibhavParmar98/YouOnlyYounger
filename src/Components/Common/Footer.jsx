@@ -16,7 +16,7 @@ const Footer = () => {
   const navigate = useNavigate()
 
   return (
-    <div className="relative text-white font-inter overflow-hidden">
+    <div className="relative overflow-x-hidden text-white font-inter overflow-hidden">
       {/* Overlay Image on Top of Everything (no effect on background) */}
       <img
         src="./69.png"

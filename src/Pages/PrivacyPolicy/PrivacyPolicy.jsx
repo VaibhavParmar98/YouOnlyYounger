@@ -6,7 +6,7 @@ import DeepHealing from '../../Components/Common/DeepHealing'
 
 const PrivacyPolicy = () => {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <BannerPrivacyPolicy/>
       <DetailPrivacyPolicy/>
       <FandQ/>

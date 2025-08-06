@@ -20,7 +20,7 @@ import Banner from '../../Components/Banner/Banner'
 
 const Home = () => {
   return (
-    <div >
+    <div className=''>
             <Banner/>
             <ProfileDetails/>
             <Categories/>

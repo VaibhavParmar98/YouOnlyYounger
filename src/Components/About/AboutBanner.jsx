@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const AboutBanner = () => {
   return (
     <>
-  <section className="relative bg-[#400186] lg:h-72 md:h-44 h-36 text-white py-10 px-6 font-inter">
+  <section className="relative bg-[#400186]  lg:h-72 md:h-44 h-36 text-white py-10 px-6 font-inter">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2  gap-8 relative">
           {/* Left Content */}
           <div className=' flex flex-col xl:mt-10 lg:mt-14 md:mt-3'>

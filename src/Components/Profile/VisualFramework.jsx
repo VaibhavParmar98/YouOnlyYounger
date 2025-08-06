@@ -34,7 +34,7 @@ const VisualFramework = () => {
   }, []);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-10 lg:pt-20 lg:pb-6">
+    <div className="max-w-7xl overflow-x-hidden mx-auto px-4 py-10 lg:pt-20 lg:pb-6">
       {/* Heading Section */}
       <div className="flex flex-col gap-4 items-center text-center mb-10">
         <img src="./101.svg" alt="" className="w-20 h-20 object-contain" />

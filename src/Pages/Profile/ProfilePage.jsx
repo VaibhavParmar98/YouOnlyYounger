@@ -16,7 +16,7 @@ import InterSection from '../../Components/Common/InterSection'
 
 const ProfilePage = () => {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <Profile/>
       <ProfileDetails/>
       <Categories/>

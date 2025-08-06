@@ -13,7 +13,7 @@ import StrengthVitalBody from '../../Components/Common/StrengthVitalBody'
 
 const VitalBody = () => {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <BannerVital/>
       <CirculationVitalBody/>
       <ImbalanceSignsSection/>

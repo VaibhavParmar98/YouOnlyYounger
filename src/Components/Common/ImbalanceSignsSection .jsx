@@ -12,9 +12,9 @@ const ImbalanceSignsSection = () => {
   ];
 
   return (
-    <section className="bg-gray-100 px-4 py-10 lg:py-20 rounded-xl relative">
+    <section className="bg-gray-100 overflow-x-hidden px-4 py-10 lg:py-20 rounded-xl relative">
       <img
-        src="./31.png"
+        src="./31.svg"
         alt="Side Decoration"
         className=" absolute 2xl:-left-0 2xl:top-10 lg:-left-0 lg:top-10 md:-left-0 md:top-64 lg:w-64 lg:h-64 md:w-44 md:h-44"
       />

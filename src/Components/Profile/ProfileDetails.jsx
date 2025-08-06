@@ -4,9 +4,9 @@ import Text from "../Common/Text";
 
 const ProfileDetails = () => {
   return (
-    <div className="bg-[#F6F6F6] py-10 lg:py-20 relative">
+    <div className="bg-[#F6F6F6] overflow-x-hidden py-10 lg:py-20 relative">
        <img
-        src="./31.png"
+        src="./31.svg"
         alt="Side Decoration"
         className=" absolute 2xl:left-10 2xl:top-64 lg:-left-10 lg:top-36 md:-left-10 md:top-44 lg:w-64 lg:h-64 md:w-44 md:h-44"
       />
@@ -21,7 +21,7 @@ const ProfileDetails = () => {
         </div>
 
         {/* Text Section */}
-        <div className="w-full lg:w-1/2  text-center lg:text-start flex flex-col gap-3">
+        <div className="w-full relative z-10 lg:w-1/2  text-center lg:text-start flex flex-col gap-3">
           <Text variant="text5" className="  marcellus-text leading-tight" style={{ fontFamily: 'Marcellus' }}>
             Welcome to our <br /> Integrative Medicine Center
           </Text>

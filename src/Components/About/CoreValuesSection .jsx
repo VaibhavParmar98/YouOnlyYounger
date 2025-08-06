@@ -31,14 +31,14 @@ const CoreValuesSection = () => {
   ];
 
   return (
-    <div className="bg-[#F6F6F6] py-10 lg:py-20 px-4 sm:px-6 md:px-8 font-inter relative p-3 md:p-0">
+    <div className="bg-[#F6F6F6] overflow-x-hidden py-10 lg:py-20 px-4 sm:px-6 md:px-8 font-inter relative p-3 md:p-0">
        <img
-        src="./31.png"
+        src="./31.svg"
         alt="Side Decoration"
         className=" absolute 2xl:left-10 2xl:top-44 xl:right-2 xl:bottom-0 lg:right-2 lg:bottom-0 right-2 bottom-0 md:-right-10 md:bottom-0 lg:w-64 lg:h-64 md:w-20 md:h-44"
       />
 
-      <section className="max-w-7xl mx-auto w-full relative z-10">
+      <section className="max-w-7xl overflow-x-hidden mx-auto w-full relative z-10">
         <div className="flex flex-col xl:flex-row items-stretch gap-8">
           {/* Left Image */}
           <div className="w-full xl:w-1/2 flex items-center justify-center">

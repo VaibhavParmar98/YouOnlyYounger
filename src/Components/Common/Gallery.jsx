@@ -50,7 +50,7 @@ const Gallery = () => {
   };
 
   return (
-    <div className="bg-[#F6F6F6] py-10 lg:py-20 px-4 sm:px-6 md:px-8">
+    <div className="bg-[#F6F6F6] overflow-x-hidden py-10 lg:py-20 px-4 sm:px-6 md:px-8">
       {/* Header */}
       <div className="flex flex-col gap-3 text-center mb-8">
         <Text variant="text5" className="marcellus-text leading-tight">

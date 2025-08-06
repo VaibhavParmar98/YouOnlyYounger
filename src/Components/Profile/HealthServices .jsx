@@ -30,7 +30,7 @@ const HealthServices = () => {
   ];
 
   return (
-    <div className="bg-white py-10 lg:py-20 px-4 max-w-7xl mx-auto">
+    <div className="bg-white overflow-x-hidden py-10 lg:py-20 px-4 max-w-7xl mx-auto">
       <div className="grid md:grid-cols-3 gap-4 text-center">
         {services.map((service) => (
           <div

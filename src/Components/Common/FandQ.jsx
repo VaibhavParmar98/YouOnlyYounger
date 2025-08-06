@@ -33,11 +33,11 @@ const FandQ = () => {
   };
 
   return (
-    <div className="relative 2xl:max-w-7xl xl:max-w-5xl lg:max-w-3xl max-w-xl mx-auto px-4 py-10 lg:py-20 font-inter">
+    <div className="relative overflow-x-hidden 2xl:max-w-7xl xl:max-w-5xl lg:max-w-3xl max-w-xl mx-auto px-4 py-10 lg:py-20 font-inter">
       
       {/* Left-side image */}
       <img
-        src="./31.png"
+        src="./31.svg"
         alt="Side Decoration"
         className=" absolute 2xl:-left-70 2xl:top-44 lg:-left-60 lg:top-36 md:-left-30 md:top-56 lg:w-64 lg:h-64 md:w-44 md:h-44"
       />
